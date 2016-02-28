@@ -47,7 +47,12 @@ namespace ElgamalTutor
                 ReverseAnsLabel2.Text += "Верно";
             else
                 ReverseAnsLabel2.Text += "Неверно";
-
+            //Some LINQ magic
+            int summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) + Answers.ReverseAnswers.Sum(a => a ? 1 : 0);
+            double FinalMark = 3 * (summa / 8) + 2;
+            if (FinalMark % 1 >= 0.5)
+                FinalMark += 1; 
+            FinalMarkLabel.Text = ((int)FinalMark).ToString();
         }
 
         private void endBtn_Click(object sender, EventArgs e)

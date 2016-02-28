@@ -40,6 +40,8 @@
             this.ReverseAnsLabel1 = new System.Windows.Forms.Label();
             this.ReverseAnsLabel2 = new System.Windows.Forms.Label();
             this.endBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.FinalMarkLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -143,7 +145,7 @@
             // 
             // endBtn
             // 
-            this.endBtn.Location = new System.Drawing.Point(112, 218);
+            this.endBtn.Location = new System.Drawing.Point(102, 281);
             this.endBtn.Name = "endBtn";
             this.endBtn.Size = new System.Drawing.Size(122, 48);
             this.endBtn.TabIndex = 12;
@@ -151,11 +153,33 @@
             this.endBtn.UseVisualStyleBackColor = true;
             this.endBtn.Click += new System.EventHandler(this.endBtn_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(82, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Итоговая оценка:";
+            // 
+            // FinalMarkLabel
+            // 
+            this.FinalMarkLabel.AutoSize = true;
+            this.FinalMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FinalMarkLabel.Location = new System.Drawing.Point(230, 219);
+            this.FinalMarkLabel.Name = "FinalMarkLabel";
+            this.FinalMarkLabel.Size = new System.Drawing.Size(65, 20);
+            this.FinalMarkLabel.TabIndex = 14;
+            this.FinalMarkLabel.Text = "Оценка";
+            // 
             // TutorResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 278);
+            this.ClientSize = new System.Drawing.Size(341, 361);
+            this.Controls.Add(this.FinalMarkLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.endBtn);
             this.Controls.Add(this.ReverseAnsLabel2);
             this.Controls.Add(this.ReverseAnsLabel1);
@@ -190,5 +214,7 @@
         private System.Windows.Forms.Label ReverseAnsLabel1;
         private System.Windows.Forms.Label ReverseAnsLabel2;
         private System.Windows.Forms.Button endBtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label FinalMarkLabel;
     }
 }
