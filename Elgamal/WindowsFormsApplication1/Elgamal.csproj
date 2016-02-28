@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3593B4D-6C60-4702-96D2-652979C8CD90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ElgamalTutor</RootNamespace>
+    <AssemblyName>ElgamalTutor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Answers.cs" />
+    <Compile Include="CalcfiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcfiForm.Designer.cs">
+      <DependentUpon>CalcfiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecryptForm.Designer.cs">
+      <DependentUpon>DecryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncryptForm.Designer.cs">
+      <DependentUpon>EncryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="matan.cs" />
+    <Compile Include="modPowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modPowForm.Designer.cs">
+      <DependentUpon>modPowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimeTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimeTestForm.Designer.cs">
+      <DependentUpon>PrimeTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimitiveRootForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimitiveRootForm.Designer.cs">
+      <DependentUpon>PrimitiveRootForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TutorForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm1.Designer.cs">
+      <DependentUpon>TutorForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm2.Designer.cs">
+      <DependentUpon>TutorForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm3.Designer.cs">
+      <DependentUpon>TutorForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm5.Designer.cs">
+      <DependentUpon>TutorForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm6.Designer.cs">
+      <DependentUpon>TutorForm6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorForm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm7.Designer.cs">
+      <DependentUpon>TutorForm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorForm4.Designer.cs">
+      <DependentUpon>TutorForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorIntroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorIntroForm.Designer.cs">
+      <DependentUpon>TutorIntroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorResults.Designer.cs">
+      <DependentUpon>TutorResults.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcfiForm.resx">
+      <DependentUpon>CalcfiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecryptForm.resx">
+      <DependentUpon>DecryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncryptForm.resx">
+      <DependentUpon>EncryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modPowForm.resx">
+      <DependentUpon>modPowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimeTestForm.resx">
+      <DependentUpon>PrimeTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimitiveRootForm.resx">
+      <DependentUpon>PrimitiveRootForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TutorForm1.resx">
+      <DependentUpon>TutorForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorForm2.resx">
+      <DependentUpon>TutorForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorForm3.resx">
+      <DependentUpon>TutorForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorForm5.resx">
+      <DependentUpon>TutorForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorForm6.resx">
+      <DependentUpon>TutorForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorForm7.resx">
+      <DependentUpon>TutorForm7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorForm4.resx">
+      <DependentUpon>TutorForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorIntroForm.resx">
+      <DependentUpon>TutorIntroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorResults.resx">
+      <DependentUpon>TutorResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
