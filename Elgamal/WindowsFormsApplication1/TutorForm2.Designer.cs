@@ -37,6 +37,8 @@
             this.answerBox2 = new System.Windows.Forms.TextBox();
             this.answerBox3 = new System.Windows.Forms.TextBox();
             this.nextBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -45,14 +47,14 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(294, 128);
+            this.textBox1.Size = new System.Drawing.Size(302, 194);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // QuestionLabel1
             // 
             this.QuestionLabel1.AutoSize = true;
-            this.QuestionLabel1.Location = new System.Drawing.Point(12, 143);
+            this.QuestionLabel1.Location = new System.Drawing.Point(12, 300);
             this.QuestionLabel1.Name = "QuestionLabel1";
             this.QuestionLabel1.Size = new System.Drawing.Size(35, 13);
             this.QuestionLabel1.TabIndex = 1;
@@ -61,7 +63,7 @@
             // QuestionLabel2
             // 
             this.QuestionLabel2.AutoSize = true;
-            this.QuestionLabel2.Location = new System.Drawing.Point(12, 180);
+            this.QuestionLabel2.Location = new System.Drawing.Point(12, 337);
             this.QuestionLabel2.Name = "QuestionLabel2";
             this.QuestionLabel2.Size = new System.Drawing.Size(35, 13);
             this.QuestionLabel2.TabIndex = 2;
@@ -70,7 +72,7 @@
             // QuestionLabel3
             // 
             this.QuestionLabel3.AutoSize = true;
-            this.QuestionLabel3.Location = new System.Drawing.Point(12, 214);
+            this.QuestionLabel3.Location = new System.Drawing.Point(12, 371);
             this.QuestionLabel3.Name = "QuestionLabel3";
             this.QuestionLabel3.Size = new System.Drawing.Size(35, 13);
             this.QuestionLabel3.TabIndex = 3;
@@ -78,28 +80,28 @@
             // 
             // answerBox1
             // 
-            this.answerBox1.Location = new System.Drawing.Point(53, 140);
+            this.answerBox1.Location = new System.Drawing.Point(53, 297);
             this.answerBox1.Name = "answerBox1";
             this.answerBox1.Size = new System.Drawing.Size(100, 20);
             this.answerBox1.TabIndex = 4;
             // 
             // answerBox2
             // 
-            this.answerBox2.Location = new System.Drawing.Point(53, 177);
+            this.answerBox2.Location = new System.Drawing.Point(53, 334);
             this.answerBox2.Name = "answerBox2";
             this.answerBox2.Size = new System.Drawing.Size(100, 20);
             this.answerBox2.TabIndex = 5;
             // 
             // answerBox3
             // 
-            this.answerBox3.Location = new System.Drawing.Point(53, 211);
+            this.answerBox3.Location = new System.Drawing.Point(53, 368);
             this.answerBox3.Name = "answerBox3";
             this.answerBox3.Size = new System.Drawing.Size(100, 20);
             this.answerBox3.TabIndex = 6;
             // 
             // nextBtn
             // 
-            this.nextBtn.Location = new System.Drawing.Point(190, 282);
+            this.nextBtn.Location = new System.Drawing.Point(190, 406);
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Size = new System.Drawing.Size(116, 43);
             this.nextBtn.TabIndex = 7;
@@ -107,11 +109,23 @@
             this.nextBtn.UseVisualStyleBackColor = true;
             this.nextBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(25, 212);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(281, 73);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // TutorForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 337);
+            this.ClientSize = new System.Drawing.Size(326, 461);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.answerBox3);
             this.Controls.Add(this.answerBox2);
@@ -123,6 +137,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TutorForm2";
             this.Text = "Функция Эйлера";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +153,6 @@
         private System.Windows.Forms.TextBox answerBox2;
         private System.Windows.Forms.TextBox answerBox3;
         private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
