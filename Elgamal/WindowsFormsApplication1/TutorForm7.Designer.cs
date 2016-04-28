@@ -142,9 +142,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(9, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(338, 13);
+            this.label4.Size = new System.Drawing.Size(332, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Сообщение М можно получить по формуле: М = b*(a^x)^-1 (mod p)";
+            this.label4.Text = "Сообщение М можно получить по формуле: М = b*(a^x)^-1 mod p";
             // 
             // DecryptBtn
             // 

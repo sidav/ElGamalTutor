@@ -53,7 +53,7 @@
             this.nextBtn.UseVisualStyleBackColor = true;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
-            // TutorIntroForm
+            // TutorForm4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -61,7 +61,7 @@
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "TutorIntroForm";
+            this.Name = "TutorForm4";
             this.Text = "Описание алгоритма";
             this.ResumeLayout(false);
             this.PerformLayout();

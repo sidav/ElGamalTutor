@@ -136,9 +136,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 212);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 13);
+            this.label5.Size = new System.Drawing.Size(186, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "2. Вычисляем число а = g^k (mod p). ";
+            this.label5.Text = "2. Вычисляем число а = g^k mod p. ";
             // 
             // calcaBtn
             // 
@@ -180,9 +180,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 264);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(204, 13);
+            this.label7.Size = new System.Drawing.Size(201, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "3. Вычисляем число b = y^k * M (mod p)";
+            this.label7.Text = "3. Вычисляем число b = y^k * M mod p.";
             // 
             // calcbbtn
             // 
@@ -234,7 +234,7 @@
             this.wrongMLabel.Visible = false;
             this.wrongMLabel.Click += new System.EventHandler(this.label9_Click);
             // 
-            // TutorForm3
+            // TutorForm6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -260,7 +260,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "TutorForm3";
+            this.Name = "TutorForm6";
             this.Text = "Шифрование";
             this.ResumeLayout(false);
             this.PerformLayout();
