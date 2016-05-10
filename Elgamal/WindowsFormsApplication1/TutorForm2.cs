@@ -39,7 +39,7 @@ namespace ElgamalTutor
                 Answers.EulerAnswers[1] = (ans2 == matan.phi(fi2));
                 Answers.EulerAnswers[2] = (ans3 == matan.phi(fi3));
                 var newForm = new TutorForm3();
-                newForm.ShowDialog();
+                newForm.Show();
                 this.Close();
             }
         }

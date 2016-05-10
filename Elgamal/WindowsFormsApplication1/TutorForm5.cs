@@ -66,7 +66,7 @@ namespace ElgamalTutor
             if (matan.isPrime(p) && p > 2 && x > 1 && g > 1 && y > 0)
             {
                 var newForm = new TutorForm6(g, p, y, x);
-                newForm.ShowDialog();
+                newForm.Show();
                 this.Close();
             }
             if (!matan.isPrime(p)) wrongpLabel.Visible = true;

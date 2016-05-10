@@ -21,7 +21,7 @@ namespace ElgamalTutor
         private void nextBtn_Click(object sender, EventArgs e)
         {
             var newForm = new TutorForm5();
-            newForm.ShowDialog();
+            newForm.Show();
             this.Close();
         }
     }

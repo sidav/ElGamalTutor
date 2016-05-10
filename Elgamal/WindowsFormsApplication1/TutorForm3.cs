@@ -27,7 +27,7 @@ namespace ElgamalTutor
             Answers.ReverseAnswers[0] = ans1 == 7;
             Answers.ReverseAnswers[1] = ans2 == 21;
             var newForm = new TutorForm4();
-            newForm.ShowDialog();
+            newForm.Show();
             this.Close();
         }
     }

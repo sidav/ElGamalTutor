@@ -20,7 +20,7 @@ namespace ElgamalTutor
         private void startTutorBtn_Click(object sender, EventArgs e)
         {
             var newForm = new TutorIntroForm();
-            newForm.ShowDialog();
+            newForm.Show();
             //this.Close();
         }
 

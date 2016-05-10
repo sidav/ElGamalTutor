@@ -49,8 +49,8 @@ namespace ElgamalTutor
                 Answers.modpowAnswers[1] = (answer2 == BigInteger.ModPow(g2, x2, m2));
                 Answers.modpowAnswers[2] = (answer3 == BigInteger.ModPow(g3, x3, m3));
                 var newForm = new TutorForm2();
-                newForm.ShowDialog();
                 this.Close();
+                newForm.Show();
             }
         }
 

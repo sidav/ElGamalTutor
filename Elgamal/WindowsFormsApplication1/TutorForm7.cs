@@ -59,7 +59,7 @@ namespace ElgamalTutor
             if (M > 0)
             {
                 var newForm = new TutorResults();
-                newForm.ShowDialog();
+                newForm.Show();
                 this.Close();
             }
         }

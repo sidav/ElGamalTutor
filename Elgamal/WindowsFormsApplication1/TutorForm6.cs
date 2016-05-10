@@ -74,7 +74,7 @@ namespace ElgamalTutor
             if (M < p && M > 0 && a > 0 && b > 0 && k > 0)
             {
                 var newForm = new TutorForm7(g, p, y, x, a, b);
-                newForm.ShowDialog();
+                newForm.Show();
                 this.Close();
             }
         }
