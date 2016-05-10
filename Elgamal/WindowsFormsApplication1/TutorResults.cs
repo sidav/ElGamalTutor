@@ -15,6 +15,15 @@ namespace ElgamalTutor
         public TutorResults()
         {
             InitializeComponent();
+        }
+
+        private void endBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TutorResults_Load(object sender, EventArgs e)
+        {
             if (Answers.modpowAnswers[0])
                 powmodAnsLabel1.Text += "Верно";
             else
@@ -51,13 +60,8 @@ namespace ElgamalTutor
             double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) + Answers.ReverseAnswers.Sum(a => a ? 1 : 0);
             double FinalMark = 3 * (summa / 8) + 2;
             if (FinalMark % 1 >= 0.5)
-                FinalMark += 1; 
+                FinalMark += 1;
             FinalMarkLabel.Text = ((int)FinalMark).ToString();
-        }
-
-        private void endBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

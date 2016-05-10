@@ -195,6 +195,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TutorResults";
             this.Text = "Результаты";
+            this.Load += new System.EventHandler(this.TutorResults_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
