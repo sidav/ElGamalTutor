@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.wrongpLabel = new System.Windows.Forms.Label();
+            this.ReturnBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ptextBox
@@ -157,9 +158,9 @@
             // 
             // nextBtn
             // 
-            this.nextBtn.Location = new System.Drawing.Point(399, 394);
+            this.nextBtn.Location = new System.Drawing.Point(399, 388);
             this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(118, 39);
+            this.nextBtn.Size = new System.Drawing.Size(118, 45);
             this.nextBtn.TabIndex = 13;
             this.nextBtn.Text = "Далее";
             this.nextBtn.UseVisualStyleBackColor = true;
@@ -196,11 +197,22 @@
             this.wrongpLabel.Text = "Число p должно быть простым";
             this.wrongpLabel.Visible = false;
             // 
-            // TutorForm3
+            // ReturnBtn
+            // 
+            this.ReturnBtn.Location = new System.Drawing.Point(12, 388);
+            this.ReturnBtn.Name = "ReturnBtn";
+            this.ReturnBtn.Size = new System.Drawing.Size(95, 45);
+            this.ReturnBtn.TabIndex = 22;
+            this.ReturnBtn.Text = "Назад";
+            this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
+            // 
+            // TutorForm5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 445);
+            this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.wrongpLabel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -218,7 +230,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ptextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "TutorForm3";
+            this.Name = "TutorForm5";
             this.Text = "Генерация ключей";
             this.Load += new System.EventHandler(this.TutorForm2_Load);
             this.ResumeLayout(false);
@@ -244,7 +256,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label wrongpLabel;
-
-
+        private System.Windows.Forms.Button ReturnBtn;
     }
 }

@@ -48,6 +48,7 @@
             this.nextBtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.wrongMLabel = new System.Windows.Forms.Label();
+            this.ReturnBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -234,11 +235,22 @@
             this.wrongMLabel.Visible = false;
             this.wrongMLabel.Click += new System.EventHandler(this.label9_Click);
             // 
+            // ReturnBtn
+            // 
+            this.ReturnBtn.Location = new System.Drawing.Point(16, 367);
+            this.ReturnBtn.Name = "ReturnBtn";
+            this.ReturnBtn.Size = new System.Drawing.Size(95, 45);
+            this.ReturnBtn.TabIndex = 21;
+            this.ReturnBtn.Text = "Назад";
+            this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
+            // 
             // TutorForm6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 424);
+            this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.wrongMLabel);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.nextBtn);
@@ -262,6 +274,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TutorForm6";
             this.Text = "Шифрование";
+            this.Load += new System.EventHandler(this.TutorForm6_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +302,6 @@
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label wrongMLabel;
+        private System.Windows.Forms.Button ReturnBtn;
     }
 }

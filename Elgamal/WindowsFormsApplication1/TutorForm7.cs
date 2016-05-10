@@ -19,23 +19,23 @@ namespace ElgamalTutor
         private BigInteger y = new BigInteger(0);
         private BigInteger a = new BigInteger(0);
         private BigInteger b = new BigInteger(0);
-        private BigInteger M = new BigInteger(0);
-        public TutorForm7(BigInteger garg, BigInteger parg, BigInteger yarg, BigInteger xarg, BigInteger aarg, BigInteger barg/*, BigInteger Marg*/)
+        private BigInteger M = new BigInteger(65);
+        public TutorForm7(/*BigInteger garg, BigInteger parg, BigInteger yarg, BigInteger xarg, BigInteger aarg, BigInteger barg/*, BigInteger Marg*/)
         {
             InitializeComponent();
-            g = garg;
-            p = parg;
-            y = yarg;
-            x = xarg;
-            a = aarg;
-            b = barg;
-            //M = Marg;
-            gLabel.Text += g.ToString();
-            pLabel.Text += p.ToString();
-            yLabel.Text += y.ToString();
-            xLabel.Text += x.ToString();
-            aLabel.Text += a.ToString();
-            bLabel.Text += b.ToString();
+            //g = Answers.a;
+            //p = Answers.b;
+            //y = Answers.y;
+            //x = Answers.x;
+            //a = Answers.a;
+            //b = Answers.b;
+            ////M = Marg;
+            //gLabel.Text += g.ToString();
+            //pLabel.Text += p.ToString();
+            //yLabel.Text += y.ToString();
+            //xLabel.Text += x.ToString();
+            //aLabel.Text += a.ToString();
+            //bLabel.Text += b.ToString();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -58,10 +58,35 @@ namespace ElgamalTutor
         {
             if (M > 0)
             {
-                var newForm = new TutorResults();
-                newForm.Show();
+                //var newForm = new TutorResults();
+                //newForm.Show();
+                Answers.interruptTutorial = false;
                 this.Close();
             }
+        }
+
+        private void TutorForm7_Load(object sender, EventArgs e)
+        {
+            g = Answers.g;
+            p = Answers.p;
+            y = Answers.y;
+            x = Answers.x;
+            a = Answers.a;
+            b = Answers.b;
+            //M = Marg;
+            gLabel.Text += g.ToString();
+            pLabel.Text += p.ToString();
+            yLabel.Text += y.ToString();
+            xLabel.Text += x.ToString();
+            aLabel.Text += a.ToString();
+            bLabel.Text += b.ToString();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
         }
     }
 }

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TutorForm4));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.nextBtn = new System.Windows.Forms.Button();
+            this.ReturnBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -53,11 +54,22 @@
             this.nextBtn.UseVisualStyleBackColor = true;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
+            // ReturnBtn
+            // 
+            this.ReturnBtn.Location = new System.Drawing.Point(12, 379);
+            this.ReturnBtn.Name = "ReturnBtn";
+            this.ReturnBtn.Size = new System.Drawing.Size(104, 49);
+            this.ReturnBtn.TabIndex = 10;
+            this.ReturnBtn.Text = "Назад";
+            this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
+            // 
             // TutorForm4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 440);
+            this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -72,5 +84,6 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.Button ReturnBtn;
     }
 }

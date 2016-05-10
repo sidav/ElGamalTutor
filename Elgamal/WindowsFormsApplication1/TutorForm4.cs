@@ -20,8 +20,16 @@ namespace ElgamalTutor
 
         private void nextBtn_Click(object sender, EventArgs e)
         {
-            var newForm = new TutorForm5();
-            newForm.Show();
+            Answers.interruptTutorial = false;
+            //var newForm = new TutorForm5();
+            //newForm.Show();
+            this.Close();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
             this.Close();
         }
     }

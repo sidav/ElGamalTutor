@@ -21,17 +21,18 @@ namespace ElgamalTutor
         private BigInteger a = new BigInteger(0);
         private BigInteger b = new BigInteger(0);
         private BigInteger M = new BigInteger(0);
-        public TutorForm6(BigInteger garg, BigInteger parg, BigInteger yarg, BigInteger xarg)
+        public TutorForm6(/*BigInteger garg, BigInteger parg, BigInteger yarg, BigInteger xarg*/)
         {
             InitializeComponent();
-            g = garg;
-            p = parg;
-            y = yarg;
-            x = xarg;
-            gLabel.Text += g.ToString();
-            pLabel.Text += p.ToString();
-            yLabel.Text += y.ToString();
+            //g = Answers.g;
+            //p = Answers.p;
+            //y = Answers.y;
+            //x = Answers.x;
+            //gLabel.Text += g.ToString();
+            //pLabel.Text += p.ToString();
+            //yLabel.Text += y.ToString();
         }
+        
 
         private void generatekBtn_Click(object sender, EventArgs e)
         {
@@ -73,8 +74,15 @@ namespace ElgamalTutor
         {
             if (M < p && M > 0 && a > 0 && b > 0 && k > 0)
             {
-                var newForm = new TutorForm7(g, p, y, x, a, b);
-                newForm.Show();
+                //var newForm = new TutorForm7(g, p, y, x, a, b);
+                //newForm.Show();
+                Answers.interruptTutorial = false;
+                Answers.a = a;
+                Answers.b = b;
+                Answers.g = g;
+                Answers.p = p;
+                Answers.y = y;
+                Answers.x = x;
                 this.Close();
             }
         }
@@ -87,6 +95,24 @@ namespace ElgamalTutor
         private void kBox_TextChanged(object sender, EventArgs e)
         {
             BigInteger.TryParse(kBox.Text, out k);
+        }
+
+        private void TutorForm6_Load(object sender, EventArgs e)
+        {
+            g = Answers.g;
+            p = Answers.p;
+            y = Answers.y;
+            x = Answers.x;
+            gLabel.Text += g.ToString();
+            pLabel.Text += p.ToString();
+            yLabel.Text += y.ToString();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
         }
     }
 }

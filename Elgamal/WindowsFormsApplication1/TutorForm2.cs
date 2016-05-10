@@ -15,6 +15,14 @@ namespace ElgamalTutor
     {
         BigInteger fi1, fi2, fi3;
         BigInteger ans1, ans2, ans3;
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
+        }
+
         Random rand = new Random();
         public TutorForm2()
         {
@@ -38,8 +46,9 @@ namespace ElgamalTutor
                 Answers.EulerAnswers[0] = (ans1 == matan.phi(fi1));
                 Answers.EulerAnswers[1] = (ans2 == matan.phi(fi2));
                 Answers.EulerAnswers[2] = (ans3 == matan.phi(fi3));
-                var newForm = new TutorForm3();
-                newForm.Show();
+                //var newForm = new TutorForm3();
+                //newForm.Show();
+                Answers.interruptTutorial = false;
                 this.Close();
             }
         }

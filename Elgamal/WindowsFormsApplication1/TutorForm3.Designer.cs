@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.answerBox2 = new System.Windows.Forms.TextBox();
             this.nextBtn = new System.Windows.Forms.Button();
+            this.ReturnBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -100,11 +101,22 @@
             this.nextBtn.UseVisualStyleBackColor = true;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
+            // ReturnBtn
+            // 
+            this.ReturnBtn.Location = new System.Drawing.Point(12, 274);
+            this.ReturnBtn.Name = "ReturnBtn";
+            this.ReturnBtn.Size = new System.Drawing.Size(95, 47);
+            this.ReturnBtn.TabIndex = 10;
+            this.ReturnBtn.Text = "Назад";
+            this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
+            // 
             // TutorForm3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(352, 333);
+            this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.answerBox2);
             this.Controls.Add(this.label2);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox answerBox2;
         private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.Button ReturnBtn;
     }
 }

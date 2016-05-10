@@ -19,8 +19,26 @@ namespace ElgamalTutor
 
         private void startTutorBtn_Click(object sender, EventArgs e)
         {
-            var newForm = new TutorIntroForm();
-            newForm.Show();
+            Answers.interruptTutorial = false;
+            Answers.formToShow = 0;
+            var formList = new List<Form>();
+            formList.Add(new TutorIntroForm());
+            formList.Add(new TutorForm1());
+            formList.Add(new TutorForm2());
+            formList.Add(new TutorForm3());
+            formList.Add(new TutorForm4());
+            formList.Add(new TutorForm5());
+            formList.Add(new TutorForm6());
+            formList.Add(new TutorForm7());
+            formList.Add(new TutorResults());
+            while (!Answers.tutorialEnded && !Answers.interruptTutorial)
+            {
+                Answers.interruptTutorial = true;
+                if (Answers.formToShow >= formList.Count)
+                    break;
+                formList[Answers.formToShow].ShowDialog();
+                Answers.formToShow++;
+            }
             //this.Close();
         }
 

@@ -38,6 +38,7 @@
             this.answerBox3 = new System.Windows.Forms.TextBox();
             this.nextBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ReturnBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,11 +121,22 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // ReturnBtn
+            // 
+            this.ReturnBtn.Location = new System.Drawing.Point(12, 406);
+            this.ReturnBtn.Name = "ReturnBtn";
+            this.ReturnBtn.Size = new System.Drawing.Size(95, 43);
+            this.ReturnBtn.TabIndex = 9;
+            this.ReturnBtn.Text = "Назад";
+            this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
+            // 
             // TutorForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 461);
+            this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.answerBox3);
@@ -154,5 +166,6 @@
         private System.Windows.Forms.TextBox answerBox3;
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button ReturnBtn;
     }
 }

@@ -65,8 +65,13 @@ namespace ElgamalTutor
         {
             if (matan.isPrime(p) && p > 2 && x > 1 && g > 1 && y > 0)
             {
-                var newForm = new TutorForm6(g, p, y, x);
-                newForm.Show();
+                //var newForm = new TutorForm6(g, p, y, x);
+                //newForm.Show();
+                Answers.g = g;
+                Answers.p = p;
+                Answers.y = y;
+                Answers.x = x;
+                Answers.interruptTutorial = false;
                 this.Close();
             }
             if (!matan.isPrime(p)) wrongpLabel.Visible = true;
@@ -101,6 +106,13 @@ namespace ElgamalTutor
         private void ytextBox_TextChanged(object sender, EventArgs e)
         {
           //  ytextBox.Text = BigInteger.ModPow(g, x, p).ToString();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
         }
     }
 }
