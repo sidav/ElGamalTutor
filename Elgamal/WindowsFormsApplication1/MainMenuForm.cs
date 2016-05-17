@@ -26,11 +26,13 @@ namespace ElgamalTutor
             formList.Add(new TutorForm1());
             formList.Add(new TutorForm2());
             formList.Add(new TutorForm3());
+            formList.Add(new ElGamalInfoForm());
             formList.Add(new TutorForm4());
             formList.Add(new TutorForm5());
             formList.Add(new TutorForm6());
             formList.Add(new TutorForm7());
             formList.Add(new TutorResults());
+
             while (!Answers.tutorialEnded && !Answers.interruptTutorial)
             {
                 Answers.interruptTutorial = true;

@@ -79,6 +79,12 @@
     <Compile Include="DecryptForm.Designer.cs">
       <DependentUpon>DecryptForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElGamalInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElGamalInfoForm.Designer.cs">
+      <DependentUpon>ElGamalInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EncryptForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="DecryptForm.resx">
       <DependentUpon>DecryptForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ElGamalInfoForm.resx">
+      <DependentUpon>ElGamalInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EncryptForm.resx">
       <DependentUpon>EncryptForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +265,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taher_Elgamal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

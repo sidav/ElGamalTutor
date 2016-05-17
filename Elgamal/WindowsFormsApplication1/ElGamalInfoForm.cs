@@ -10,20 +10,12 @@ using System.Windows.Forms;
 
 namespace ElgamalTutor
 {
-    public partial class TutorForm4 : Form
+    public partial class ElGamalInfoForm : Form
     {
-        public TutorForm4()
+        public ElGamalInfoForm()
         {
             InitializeComponent();
             textBox1.Select(0, 0);
-        }
-
-        private void nextBtn_Click(object sender, EventArgs e)
-        {
-            Answers.interruptTutorial = false;
-            //var newForm = new TutorForm5();
-            //newForm.Show();
-            this.Close();
         }
 
         private void ReturnBtn_Click(object sender, EventArgs e)
@@ -33,9 +25,10 @@ namespace ElgamalTutor
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void endBtn_Click(object sender, EventArgs e)
         {
-
+            Answers.interruptTutorial = false;
+            this.Close();
         }
     }
 }

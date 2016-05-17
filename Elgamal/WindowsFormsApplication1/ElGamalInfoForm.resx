@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Taher_Elgamal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Taher_Elgamal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Египетский криптограф Тахер Эль-Гамаль родился в 1955 году. Свои первые шаги в криптографии он сделал путем вывода алгоритма Дискретных Квадратичных Логарифмов, который используется для факторизации целых чисел. Стал известен всему миру благодаря разработке «цифровой подписи по схеме Эль-Гамаля» в 1984 году, после этого занимался в основном графикой и разработкой технологии сжатия данных в компании Hewlett-Packard. В 1985 году представил свои разработки по созданию систем асимметричного шифрования и цифровой подписи, эксплуатирующих сложность проблемы дискретного логарифмирования. Предложенная им схема ЭЦП стала основой для алгоритма DSA, принятого Национальным институтом стандартов и технологий США (NIST) в качестве стандарта цифровой подписи. В 1994 году стал активно развивать алгоритм SSL; результатом его работы было заключение договора с Microsoft, что сыграло одну из ключевых ролей в успехе SSL. Тахер Эль-Гамаль также участвовал в создании протокола оплаты по кредитной карте SET, а также ряда схем интернет-платежей.
+</value>
   </data>
 </root>
