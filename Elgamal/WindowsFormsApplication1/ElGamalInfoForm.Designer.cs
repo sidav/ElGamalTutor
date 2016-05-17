@@ -85,7 +85,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ElGamalInfoForm";
-            this.Text = "ElGamalPerson";
+            this.ShowIcon = false;
+            this.Text = "Тахер Эль-Гамаль";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
