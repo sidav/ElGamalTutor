@@ -91,6 +91,12 @@
     <Compile Include="EncryptForm.Designer.cs">
       <DependentUpon>EncryptForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiscrLogTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscrLogTutor.Designer.cs">
+      <DependentUpon>DiscrLogTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DecryptForm.resx">
       <DependentUpon>DecryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscrLogTutor.resx">
+      <DependentUpon>DiscrLogTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ElGamalInfoForm.resx">
       <DependentUpon>ElGamalInfoForm.cs</DependentUpon>

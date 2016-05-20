@@ -56,9 +56,17 @@ namespace ElgamalTutor
                 ReverseAnsLabel2.Text += "Верно";
             else
                 ReverseAnsLabel2.Text += "Неверно";
+            if (Answers.DiscreteLogAnswers[0])
+                DiscreteLogAnsLabel1.Text += "Верно";
+            else
+                DiscreteLogAnsLabel1.Text += "Неверно";
+            if (Answers.DiscreteLogAnswers[1])
+                DiscreteLogAnsLabel2.Text += "Верно";
+            else
+                DiscreteLogAnsLabel2.Text += "Неверно";
             //Some LINQ magic
-            double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) + Answers.ReverseAnswers.Sum(a => a ? 1 : 0);
-            double FinalMark = 3 * (summa / 8) + 2;
+            double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) + Answers.ReverseAnswers.Sum(a => a ? 1 : 0) + Answers.DiscreteLogAnswers.Sum(a => a ? 1 : 0);
+            double FinalMark = 3 * (summa / 10) + 2;
             if (FinalMark % 1 >= 0.5)
                 FinalMark += 1;
             FinalMarkLabel.Text = ((int)FinalMark).ToString();

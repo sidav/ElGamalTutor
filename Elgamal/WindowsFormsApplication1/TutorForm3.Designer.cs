@@ -127,6 +127,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TutorForm3";
             this.Text = "Нахождение обратного по модулю";
+            this.Load += new System.EventHandler(this.TutorForm3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

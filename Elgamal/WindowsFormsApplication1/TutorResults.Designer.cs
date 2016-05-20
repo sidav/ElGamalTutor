@@ -42,6 +42,9 @@
             this.endBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.FinalMarkLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.DiscreteLogAnsLabel1 = new System.Windows.Forms.Label();
+            this.DiscreteLogAnsLabel2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -145,7 +148,7 @@
             // 
             // endBtn
             // 
-            this.endBtn.Location = new System.Drawing.Point(102, 281);
+            this.endBtn.Location = new System.Drawing.Point(102, 320);
             this.endBtn.Name = "endBtn";
             this.endBtn.Size = new System.Drawing.Size(122, 48);
             this.endBtn.TabIndex = 12;
@@ -157,7 +160,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(82, 219);
+            this.label2.Location = new System.Drawing.Point(82, 280);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 13;
@@ -167,17 +170,47 @@
             // 
             this.FinalMarkLabel.AutoSize = true;
             this.FinalMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FinalMarkLabel.Location = new System.Drawing.Point(230, 219);
+            this.FinalMarkLabel.Location = new System.Drawing.Point(230, 280);
             this.FinalMarkLabel.Name = "FinalMarkLabel";
             this.FinalMarkLabel.Size = new System.Drawing.Size(65, 20);
             this.FinalMarkLabel.TabIndex = 14;
             this.FinalMarkLabel.Text = "Оценка";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(253, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Задание 4: нахождение дискретного логарифма";
+            // 
+            // DiscreteLogAnsLabel1
+            // 
+            this.DiscreteLogAnsLabel1.AutoSize = true;
+            this.DiscreteLogAnsLabel1.Location = new System.Drawing.Point(32, 207);
+            this.DiscreteLogAnsLabel1.Name = "DiscreteLogAnsLabel1";
+            this.DiscreteLogAnsLabel1.Size = new System.Drawing.Size(27, 13);
+            this.DiscreteLogAnsLabel1.TabIndex = 16;
+            this.DiscreteLogAnsLabel1.Text = "№1:";
+            // 
+            // DiscreteLogAnsLabel2
+            // 
+            this.DiscreteLogAnsLabel2.AutoSize = true;
+            this.DiscreteLogAnsLabel2.Location = new System.Drawing.Point(32, 220);
+            this.DiscreteLogAnsLabel2.Name = "DiscreteLogAnsLabel2";
+            this.DiscreteLogAnsLabel2.Size = new System.Drawing.Size(27, 13);
+            this.DiscreteLogAnsLabel2.TabIndex = 17;
+            this.DiscreteLogAnsLabel2.Text = "№2:";
+            // 
             // TutorResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 361);
+            this.ClientSize = new System.Drawing.Size(341, 379);
+            this.Controls.Add(this.DiscreteLogAnsLabel2);
+            this.Controls.Add(this.DiscreteLogAnsLabel1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.FinalMarkLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.endBtn);
@@ -217,5 +250,8 @@
         private System.Windows.Forms.Button endBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label FinalMarkLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label DiscreteLogAnsLabel1;
+        private System.Windows.Forms.Label DiscreteLogAnsLabel2;
     }
 }

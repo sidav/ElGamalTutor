@@ -27,6 +27,11 @@ namespace ElgamalTutor
             this.Close();
         }
 
+        private void TutorForm3_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void nextBtn_Click(object sender, EventArgs e)
         {
             Answers.interruptTutorial = false;
