@@ -17,6 +17,13 @@ namespace ElgamalTutor
            InitializeComponent();
         }
 
+        private static void debugAnswers()
+        {
+            Answers.modpowAnswers = new bool[]{ true, true, true };
+            Answers.EulerAnswers = new bool[] { true, true, true };
+            Answers.ReverseAnswers = new bool[] { true, true};
+        }
+
         private void startTutorBtn_Click(object sender, EventArgs e)
         {
             Answers.interruptTutorial = false;
@@ -31,6 +38,7 @@ namespace ElgamalTutor
             formList.Add(new TutorForm5());
             formList.Add(new TutorForm6());
             formList.Add(new TutorForm7());
+            formList.Add(new DiscrLogTutor());
             formList.Add(new TutorResults());
 
             while (!Answers.tutorialEnded && !Answers.interruptTutorial)

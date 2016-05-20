@@ -84,6 +84,7 @@
             this.Controls.Add(this.endBtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ElGamalInfoForm";
             this.ShowIcon = false;
             this.Text = "Тахер Эль-Гамаль";

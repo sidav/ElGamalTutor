@@ -134,6 +134,7 @@
             this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DiscrLogTutor";
             this.ShowIcon = false;
             this.Text = "Дискретное логарифмирование";
