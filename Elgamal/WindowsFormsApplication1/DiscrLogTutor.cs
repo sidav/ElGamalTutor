@@ -19,6 +19,7 @@ namespace ElgamalTutor
         {
             InitializeComponent();
             textBox1.Select(0, 0);
+            textBox2.Select(0, 0);
             base1 = new BigInteger(r.Next(3)+2);
             base2 = new BigInteger(r.Next(4)+2);
             mod1 = new BigInteger(r.Next(5)+2);
