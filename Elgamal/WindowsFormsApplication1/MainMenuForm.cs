@@ -29,6 +29,9 @@ namespace ElgamalTutor
             Answers.interruptTutorial = false;
             Answers.formToShow = 0;
             var formList = new List<Form>();
+
+            formList.Add(new TestQuesionsForm1()); //TEST
+
             formList.Add(new TutorIntroForm());
             formList.Add(new TutorForm1());
             formList.Add(new TutorForm2());
@@ -39,6 +42,7 @@ namespace ElgamalTutor
             formList.Add(new TutorForm6());
             formList.Add(new TutorForm7());
             formList.Add(new DiscrLogTutor());
+            formList.Add(new TestQuesionsForm1());
             formList.Add(new TutorResults());
 
             while (!Answers.tutorialEnded && !Answers.interruptTutorial)
