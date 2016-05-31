@@ -16,5 +16,19 @@ namespace ElgamalTutor
         {
             InitializeComponent();
         }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            //Сюда прикрутить проверку ответов
+            Answers.interruptTutorial = false;
+            this.Close();
+        }
     }
 }
