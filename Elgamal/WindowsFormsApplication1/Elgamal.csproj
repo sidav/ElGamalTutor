@@ -130,6 +130,18 @@
     <Compile Include="TestQuesionsForm1.Designer.cs">
       <DependentUpon>TestQuesionsForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestQuestionsForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestQuestionsForm2.Designer.cs">
+      <DependentUpon>TestQuestionsForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestQuestionsForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestQuestionsForm3.Designer.cs">
+      <DependentUpon>TestQuestionsForm3.cs</DependentUpon>
+    </Compile>
     <Compile Include="TutorForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +238,12 @@
     </Compile>
     <EmbeddedResource Include="TestQuesionsForm1.resx">
       <DependentUpon>TestQuesionsForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestQuestionsForm2.resx">
+      <DependentUpon>TestQuestionsForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestQuestionsForm3.resx">
+      <DependentUpon>TestQuestionsForm3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TutorForm1.resx">
       <DependentUpon>TutorForm1.cs</DependentUpon>

@@ -215,9 +215,11 @@
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TestQuesionsForm1";
             this.ShowIcon = false;
             this.Text = "Тест, часть 1";
+            this.Load += new System.EventHandler(this.TestQuesionsForm1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

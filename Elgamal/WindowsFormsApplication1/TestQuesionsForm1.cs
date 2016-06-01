@@ -30,5 +30,10 @@ namespace ElgamalTutor
             Answers.interruptTutorial = false;
             this.Close();
         }
+
+        private void TestQuesionsForm1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
