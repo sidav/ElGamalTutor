@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ElgamalTutor
 {
-    public partial class TestQuesionsForm1 : Form
+    public partial class TestQuestionsForm1 : Form
     {
-        public TestQuesionsForm1()
+        public TestQuestionsForm1()
         {
             InitializeComponent();
         }
@@ -27,6 +27,8 @@ namespace ElgamalTutor
         private void nextBtn_Click(object sender, EventArgs e)
         {
             //Сюда прикрутить проверку ответов
+            Answers.TestAnswers[0] = TrueAnswer1RButton.Checked;
+            Answers.TestAnswers[1] = TrueAnswer2RButton.Checked;
             Answers.interruptTutorial = false;
             this.Close();
         }

@@ -45,6 +45,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.DiscreteLogAnsLabel1 = new System.Windows.Forms.Label();
             this.DiscreteLogAnsLabel2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TestAnswer1Label = new System.Windows.Forms.Label();
+            this.TestAnswer2Label = new System.Windows.Forms.Label();
+            this.TestAnswer3Label = new System.Windows.Forms.Label();
+            this.TestAnswer4Label = new System.Windows.Forms.Label();
+            this.TestAnswer5Label = new System.Windows.Forms.Label();
+            this.TestAnswer6Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -148,7 +155,7 @@
             // 
             // endBtn
             // 
-            this.endBtn.Location = new System.Drawing.Point(102, 320);
+            this.endBtn.Location = new System.Drawing.Point(114, 354);
             this.endBtn.Name = "endBtn";
             this.endBtn.Size = new System.Drawing.Size(122, 48);
             this.endBtn.TabIndex = 12;
@@ -160,7 +167,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(82, 280);
+            this.label2.Location = new System.Drawing.Point(94, 311);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 13;
@@ -170,7 +177,7 @@
             // 
             this.FinalMarkLabel.AutoSize = true;
             this.FinalMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FinalMarkLabel.Location = new System.Drawing.Point(230, 280);
+            this.FinalMarkLabel.Location = new System.Drawing.Point(242, 311);
             this.FinalMarkLabel.Name = "FinalMarkLabel";
             this.FinalMarkLabel.Size = new System.Drawing.Size(65, 20);
             this.FinalMarkLabel.TabIndex = 14;
@@ -203,11 +210,81 @@
             this.DiscreteLogAnsLabel2.TabIndex = 17;
             this.DiscreteLogAnsLabel2.Text = "№2:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 243);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Тест: ";
+            // 
+            // TestAnswer1Label
+            // 
+            this.TestAnswer1Label.AutoSize = true;
+            this.TestAnswer1Label.Location = new System.Drawing.Point(32, 265);
+            this.TestAnswer1Label.Name = "TestAnswer1Label";
+            this.TestAnswer1Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer1Label.TabIndex = 19;
+            this.TestAnswer1Label.Text = "№1: ";
+            // 
+            // TestAnswer2Label
+            // 
+            this.TestAnswer2Label.AutoSize = true;
+            this.TestAnswer2Label.Location = new System.Drawing.Point(32, 287);
+            this.TestAnswer2Label.Name = "TestAnswer2Label";
+            this.TestAnswer2Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer2Label.TabIndex = 20;
+            this.TestAnswer2Label.Text = "№2: ";
+            // 
+            // TestAnswer3Label
+            // 
+            this.TestAnswer3Label.AutoSize = true;
+            this.TestAnswer3Label.Location = new System.Drawing.Point(129, 265);
+            this.TestAnswer3Label.Name = "TestAnswer3Label";
+            this.TestAnswer3Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer3Label.TabIndex = 21;
+            this.TestAnswer3Label.Text = "№3: ";
+            // 
+            // TestAnswer4Label
+            // 
+            this.TestAnswer4Label.AutoSize = true;
+            this.TestAnswer4Label.Location = new System.Drawing.Point(129, 287);
+            this.TestAnswer4Label.Name = "TestAnswer4Label";
+            this.TestAnswer4Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer4Label.TabIndex = 22;
+            this.TestAnswer4Label.Text = "№4: ";
+            // 
+            // TestAnswer5Label
+            // 
+            this.TestAnswer5Label.AutoSize = true;
+            this.TestAnswer5Label.Location = new System.Drawing.Point(235, 265);
+            this.TestAnswer5Label.Name = "TestAnswer5Label";
+            this.TestAnswer5Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer5Label.TabIndex = 23;
+            this.TestAnswer5Label.Text = "№5: ";
+            // 
+            // TestAnswer6Label
+            // 
+            this.TestAnswer6Label.AutoSize = true;
+            this.TestAnswer6Label.Location = new System.Drawing.Point(235, 287);
+            this.TestAnswer6Label.Name = "TestAnswer6Label";
+            this.TestAnswer6Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer6Label.TabIndex = 24;
+            this.TestAnswer6Label.Text = "№6: ";
+            // 
             // TutorResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 379);
+            this.ClientSize = new System.Drawing.Size(358, 414);
+            this.Controls.Add(this.TestAnswer6Label);
+            this.Controls.Add(this.TestAnswer5Label);
+            this.Controls.Add(this.TestAnswer4Label);
+            this.Controls.Add(this.TestAnswer3Label);
+            this.Controls.Add(this.TestAnswer2Label);
+            this.Controls.Add(this.TestAnswer1Label);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.DiscreteLogAnsLabel2);
             this.Controls.Add(this.DiscreteLogAnsLabel1);
             this.Controls.Add(this.label3);
@@ -253,5 +330,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label DiscreteLogAnsLabel1;
         private System.Windows.Forms.Label DiscreteLogAnsLabel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label TestAnswer1Label;
+        private System.Windows.Forms.Label TestAnswer2Label;
+        private System.Windows.Forms.Label TestAnswer3Label;
+        private System.Windows.Forms.Label TestAnswer4Label;
+        private System.Windows.Forms.Label TestAnswer5Label;
+        private System.Windows.Forms.Label TestAnswer6Label;
     }
 }

@@ -35,11 +35,11 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.TrueAnswer4RButton = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.TrueAnswer3RButton = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox2.SuspendLayout();
@@ -72,7 +72,7 @@
             this.groupBox2.Controls.Add(this.radioButton5);
             this.groupBox2.Controls.Add(this.radioButton6);
             this.groupBox2.Controls.Add(this.radioButton7);
-            this.groupBox2.Controls.Add(this.radioButton8);
+            this.groupBox2.Controls.Add(this.TrueAnswer4RButton);
             this.groupBox2.Location = new System.Drawing.Point(12, 174);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(555, 148);
@@ -97,7 +97,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(522, 17);
             this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Число с количеством шестнадцатиричных разрядов, равным количеству букв в открытом" +
     " тексте";
             this.radioButton5.UseVisualStyleBackColor = true;
@@ -109,7 +108,6 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(479, 17);
             this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Число с количеством десятичных разрядов, равным количеству букв в открытом тексте" +
     "";
             this.radioButton6.UseVisualStyleBackColor = true;
@@ -117,7 +115,8 @@
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(6, 73);
+            this.radioButton7.Checked = true;
+            this.radioButton7.Location = new System.Drawing.Point(6, 50);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(207, 17);
             this.radioButton7.TabIndex = 1;
@@ -125,23 +124,21 @@
             this.radioButton7.Text = "Одно целое неотрицательное число";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // TrueAnswer4RButton
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Checked = true;
-            this.radioButton8.Location = new System.Drawing.Point(6, 50);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(204, 17);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Два целых неотрицательных числа";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.TrueAnswer4RButton.AutoSize = true;
+            this.TrueAnswer4RButton.Location = new System.Drawing.Point(6, 73);
+            this.TrueAnswer4RButton.Name = "TrueAnswer4RButton";
+            this.TrueAnswer4RButton.Size = new System.Drawing.Size(204, 17);
+            this.TrueAnswer4RButton.TabIndex = 0;
+            this.TrueAnswer4RButton.Text = "Два целых неотрицательных числа";
+            this.TrueAnswer4RButton.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.TrueAnswer3RButton);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -173,16 +170,16 @@
             this.radioButton4.Text = "a^(fi(m-1)) mod m";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // TrueAnswer3RButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 97);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(111, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "a^(fi(m) - 1) mod m";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.TrueAnswer3RButton.AutoSize = true;
+            this.TrueAnswer3RButton.Location = new System.Drawing.Point(6, 97);
+            this.TrueAnswer3RButton.Name = "TrueAnswer3RButton";
+            this.TrueAnswer3RButton.Size = new System.Drawing.Size(111, 17);
+            this.TrueAnswer3RButton.TabIndex = 2;
+            this.TrueAnswer3RButton.TabStop = true;
+            this.TrueAnswer3RButton.Text = "a^(fi(m) - 1) mod m";
+            this.TrueAnswer3RButton.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -237,11 +234,11 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton TrueAnswer4RButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton TrueAnswer3RButton;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
     }

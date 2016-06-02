@@ -22,6 +22,9 @@ namespace ElgamalTutor
             Answers.modpowAnswers = new bool[]{ true, true, true };
             Answers.EulerAnswers = new bool[] { true, true, true };
             Answers.ReverseAnswers = new bool[] { true, true};
+            Answers.DiscreteLogAnswers = new bool[] { true, true };
+            Answers.TestAnswers = new bool[] { true, true, true,true,true,true};
+
         }
 
         private void startTutorBtn_Click(object sender, EventArgs e)
@@ -30,7 +33,10 @@ namespace ElgamalTutor
             Answers.formToShow = 0;
             var formList = new List<Form>();
 
-            formList.Add(new TestQuesionsForm1()); //TEST
+            //REMOVE
+            debugAnswers();
+            formList.Add(new TutorResults()); 
+            //REMOVE
 
             formList.Add(new TutorIntroForm());
             formList.Add(new TutorForm1());
@@ -42,7 +48,9 @@ namespace ElgamalTutor
             formList.Add(new TutorForm6());
             formList.Add(new TutorForm7());
             formList.Add(new DiscrLogTutor());
-            formList.Add(new TestQuesionsForm1());
+            formList.Add(new TestQuestionsForm1());
+            formList.Add(new TestQuestionsForm2());
+            formList.Add(new TestQuestionsForm3());
             formList.Add(new TutorResults());
 
             while (!Answers.tutorialEnded && !Answers.interruptTutorial)

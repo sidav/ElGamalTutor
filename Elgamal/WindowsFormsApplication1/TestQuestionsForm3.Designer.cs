@@ -33,13 +33,13 @@
             this.nextBtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.TrueAnswer6RButton = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.TrueAnswer5RButton = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -55,6 +55,7 @@
             this.ReturnBtn.TabIndex = 15;
             this.ReturnBtn.Text = "Назад";
             this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
             // 
             // nextBtn
             // 
@@ -64,11 +65,12 @@
             this.nextBtn.TabIndex = 14;
             this.nextBtn.Text = "Далее";
             this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.radioButton5);
+            this.groupBox2.Controls.Add(this.TrueAnswer6RButton);
             this.groupBox2.Controls.Add(this.radioButton6);
             this.groupBox2.Controls.Add(this.radioButton7);
             this.groupBox2.Controls.Add(this.radioButton8);
@@ -89,17 +91,16 @@
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Для натурального числа n функция Эйлера может быть вычислена по формуле:";
             // 
-            // radioButton5
+            // TrueAnswer6RButton
             // 
-            this.radioButton5.Image = ((System.Drawing.Image)(resources.GetObject("radioButton5.Image")));
-            this.radioButton5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.radioButton5.Location = new System.Drawing.Point(277, 109);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton5.Size = new System.Drawing.Size(208, 63);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.TrueAnswer6RButton.Image = ((System.Drawing.Image)(resources.GetObject("TrueAnswer6RButton.Image")));
+            this.TrueAnswer6RButton.Location = new System.Drawing.Point(277, 104);
+            this.TrueAnswer6RButton.Name = "TrueAnswer6RButton";
+            this.TrueAnswer6RButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TrueAnswer6RButton.Size = new System.Drawing.Size(212, 68);
+            this.TrueAnswer6RButton.TabIndex = 3;
+            this.TrueAnswer6RButton.TabStop = true;
+            this.TrueAnswer6RButton.UseVisualStyleBackColor = true;
             // 
             // radioButton6
             // 
@@ -138,7 +139,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.TrueAnswer5RButton);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
@@ -159,26 +160,26 @@
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "На какой вычислтельной проблеме основана криптостойкость схемы Эль-Гамаля?";
             // 
-            // radioButton4
+            // TrueAnswer5RButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(6, 120);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(433, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Количеству На трудности вычисления дискретного логарифма в конечном поле";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.TrueAnswer5RButton.AutoSize = true;
+            this.TrueAnswer5RButton.Location = new System.Drawing.Point(6, 120);
+            this.TrueAnswer5RButton.Name = "TrueAnswer5RButton";
+            this.TrueAnswer5RButton.Size = new System.Drawing.Size(376, 17);
+            this.TrueAnswer5RButton.TabIndex = 3;
+            this.TrueAnswer5RButton.TabStop = true;
+            this.TrueAnswer5RButton.Text = "На сложности вычисления дискретного логарифма в конечном поле";
+            this.TrueAnswer5RButton.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(6, 97);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(479, 17);
+            this.radioButton3.Size = new System.Drawing.Size(483, 17);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "На трудности вычисления дискретного логарифма в группе точек эллиптической кривой" +
+            this.radioButton3.Text = "На сложности вычисления дискретного логарифма в группе точек эллиптической кривой" +
     "";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -232,13 +233,13 @@
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton TrueAnswer6RButton;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton TrueAnswer5RButton;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
