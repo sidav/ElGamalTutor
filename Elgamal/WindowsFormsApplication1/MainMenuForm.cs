@@ -34,8 +34,8 @@ namespace ElgamalTutor
             var formList = new List<Form>();
 
             //REMOVE
-            debugAnswers();
-            formList.Add(new TutorResults()); 
+            //debugAnswers();
+            //formList.Add(new TutorResults()); 
             //REMOVE
 
             formList.Add(new TutorIntroForm());
