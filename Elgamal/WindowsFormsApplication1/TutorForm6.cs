@@ -13,6 +13,7 @@ namespace ElgamalTutor
 {
     public partial class TutorForm6 : Form
     {
+        private bool hasLoadedKey = false;
         private BigInteger p = new BigInteger(0);
         private BigInteger g = new BigInteger(0);
         private BigInteger x = new BigInteger(0);
@@ -99,13 +100,17 @@ namespace ElgamalTutor
 
         private void TutorForm6_Load(object sender, EventArgs e)
         {
-            g = Answers.g;
-            p = Answers.p;
-            y = Answers.y;
-            x = Answers.x;
-            gLabel.Text += g.ToString();
-            pLabel.Text += p.ToString();
-            yLabel.Text += y.ToString();
+            if (!hasLoadedKey)
+            {
+                g = Answers.g;
+                p = Answers.p;
+                y = Answers.y;
+                x = Answers.x;
+                gLabel.Text += g.ToString();
+                pLabel.Text += p.ToString();
+                yLabel.Text += y.ToString();
+                hasLoadedKey = true;
+            }
         }
 
         private void ReturnBtn_Click(object sender, EventArgs e)
