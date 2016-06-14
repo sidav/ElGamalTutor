@@ -72,7 +72,7 @@ namespace ElgamalTutor
           m = n;
           for (BigInteger i = 0; i < MILLER_RABIN_ROUNDS; i++)      //максимальное i неплохо бы там log_2(m)
           {
-              BigInteger a = rand.Next()%(m-3) + 3; //ПЕРЕДЕЛАТЬ! ПЕРЕДЕЛАТЬ! ПЕРЕДЕЛАТЬ!
+              BigInteger a = rand.Next()%(m-3) + 3; 
               BigInteger x = BigInteger.ModPow(a,t,m);
               if (x == 1 || x == m-1) continue;
               for (BigInteger j = 0; j < s-1; j++)
