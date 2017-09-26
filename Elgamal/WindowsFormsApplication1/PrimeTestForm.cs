@@ -24,9 +24,14 @@ namespace ElgamalTutor
             ansLabel.Visible = false;
             BigInteger testInt;
             BigInteger.TryParse(inputBox.Text, out testInt);
-            if (matan.isPrime(testInt))
-                ansLabel.Text = "Введённое число - простое";
-            else ansLabel.Text = "Введённое число - составное";
+            if (testInt > 0)
+            {
+                if (matan.isPrime(testInt))
+                    ansLabel.Text = "Введённое число - простое";
+                else ansLabel.Text = "Введённое число - составное";
+            }
+            else
+                ansLabel.Text = "Введено неправильное значение";
             ansLabel.Visible = true;
             this.Enabled = true;
         }
