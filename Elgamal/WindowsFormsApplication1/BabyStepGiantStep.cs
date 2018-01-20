@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
+using System.Windows.Forms;
 
 namespace ElgamalTutor
 {
@@ -72,7 +73,7 @@ namespace ElgamalTutor
             return -1;
         }
 
-        public static BigInteger bsgs2(BigInteger a, BigInteger b, BigInteger m)
+        public static BigInteger bsgs2(BigInteger a, BigInteger b, BigInteger m, ProgressBar progress = null)
         {
 
             if (a == b)
@@ -88,12 +89,18 @@ namespace ElgamalTutor
             //for (i = 0; i < n; ++i)
             //    an = (an * a) % m;
 
+            BigInteger tick = n / 50; // for progressbar
+            int progressQuantum = (progress.Width / 100);
 
             for (i = 1, curKey = an; i <= n; ++i) // 3
             {
                 if (!(map.ContainsKey(curKey)))
                     map.Add(curKey, i);
                 curKey = (curKey * an) % m;
+
+                if (!(progress is null)) // progressbar
+                    if (i % tick == 0)          // progressbar!
+                        progress.Increment(progressQuantum);  //
             }
 
             for (i = 0, curKey = b; i <= n; ++i) // 4
@@ -104,6 +111,11 @@ namespace ElgamalTutor
                     if (ans < m) return ans;
                 }
                 curKey = (curKey * a) % m;
+
+                if (!(progress is null)) // progressbar
+                    if (i % tick == 0)          // progressbar!
+                        progress.Increment(progressQuantum);  //
+
             }
 
             return -1;

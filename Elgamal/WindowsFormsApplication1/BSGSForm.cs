@@ -20,14 +20,13 @@ namespace ElgamalTutor
 
         private void DoMagicBtn_Click(object sender, EventArgs e)
         {
-
+            BSGSProgressBar.Value = 0;
             BigInteger a, b, m, answer;
             a = 0;
             b = 0;
             m = 0;
             answer = 0;
 
-            this.Enabled = false;
             ResultLabel.Visible = false;
             ResultLabel.ForeColor = Color.Red;
 
@@ -47,7 +46,9 @@ namespace ElgamalTutor
                 }
                 try
                 {
-                    answer = BabyStepGiantStep.bsgs2(a, b, m);
+                    BSGSProgressBar.Visible = true;
+                    this.Enabled = false;
+                    answer = BabyStepGiantStep.bsgs2(a, b, m, BSGSProgressBar);
                 }
                 catch (OutOfMemoryException)
                 {
@@ -66,6 +67,7 @@ namespace ElgamalTutor
                         ResultLabel.Text += "?";
                 }
             }
+            BSGSProgressBar.Visible = false;
             ResultLabel.Visible = true;
             this.Enabled = true;
         }

@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BSGSProgressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // DoMagicBtn
@@ -53,7 +54,7 @@
             // 
             this.ResultLabel.AutoSize = true;
             this.ResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ResultLabel.Location = new System.Drawing.Point(8, 208);
+            this.ResultLabel.Location = new System.Drawing.Point(8, 183);
             this.ResultLabel.Name = "ResultLabel";
             this.ResultLabel.Size = new System.Drawing.Size(135, 20);
             this.ResultLabel.TabIndex = 1;
@@ -118,11 +119,20 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "A^x = B mod M ";
             // 
+            // BSGSProgressBar
+            // 
+            this.BSGSProgressBar.Location = new System.Drawing.Point(12, 242);
+            this.BSGSProgressBar.Name = "BSGSProgressBar";
+            this.BSGSProgressBar.Size = new System.Drawing.Size(260, 17);
+            this.BSGSProgressBar.TabIndex = 9;
+            this.BSGSProgressBar.Visible = false;
+            // 
             // BSGSForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.BSGSProgressBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -132,6 +142,7 @@
             this.Controls.Add(this.ABox);
             this.Controls.Add(this.ResultLabel);
             this.Controls.Add(this.DoMagicBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "BSGSForm";
             this.Text = "Дискретный логарифм";
@@ -151,5 +162,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar BSGSProgressBar;
     }
 }
