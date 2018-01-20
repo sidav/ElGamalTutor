@@ -67,6 +67,13 @@
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Answers.cs" />
+    <Compile Include="BabyStepGiantStep.cs" />
+    <Compile Include="BSGSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BSGSForm.Designer.cs">
+      <DependentUpon>BSGSForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalcfiForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +205,9 @@
     </Compile>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BSGSForm.resx">
+      <DependentUpon>BSGSForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalcfiForm.resx">
       <DependentUpon>CalcfiForm.cs</DependentUpon>

@@ -110,5 +110,11 @@ namespace ElgamalTutor
             var newForm = new AboutForm();
             newForm.ShowDialog();
         }
+
+        private void BSGSBtn_Click(object sender, EventArgs e)
+        {
+            var newForm = new BSGSForm();
+            newForm.ShowDialog();
+        }
     }
 }

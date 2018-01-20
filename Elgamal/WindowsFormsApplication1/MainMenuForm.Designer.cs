@@ -36,6 +36,7 @@
             this.primeTestBtn = new System.Windows.Forms.Button();
             this.AboutBtn = new System.Windows.Forms.Button();
             this.modPowBtn = new System.Windows.Forms.Button();
+            this.BSGSBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // startTutorBtn
@@ -112,17 +113,28 @@
             // 
             this.modPowBtn.Location = new System.Drawing.Point(12, 343);
             this.modPowBtn.Name = "modPowBtn";
-            this.modPowBtn.Size = new System.Drawing.Size(260, 45);
+            this.modPowBtn.Size = new System.Drawing.Size(127, 45);
             this.modPowBtn.TabIndex = 8;
             this.modPowBtn.Text = "Возведение в степень по модулю";
             this.modPowBtn.UseVisualStyleBackColor = true;
             this.modPowBtn.Click += new System.EventHandler(this.modPowBtn_Click);
+            // 
+            // BSGSBtn
+            // 
+            this.BSGSBtn.Location = new System.Drawing.Point(145, 343);
+            this.BSGSBtn.Name = "BSGSBtn";
+            this.BSGSBtn.Size = new System.Drawing.Size(127, 45);
+            this.BSGSBtn.TabIndex = 9;
+            this.BSGSBtn.Text = "Дискретный логарифм";
+            this.BSGSBtn.UseVisualStyleBackColor = true;
+            this.BSGSBtn.Click += new System.EventHandler(this.BSGSBtn_Click);
             // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 469);
+            this.Controls.Add(this.BSGSBtn);
             this.Controls.Add(this.modPowBtn);
             this.Controls.Add(this.AboutBtn);
             this.Controls.Add(this.primeTestBtn);
@@ -150,6 +162,7 @@
         private System.Windows.Forms.Button primeTestBtn;
         private System.Windows.Forms.Button AboutBtn;
         private System.Windows.Forms.Button modPowBtn;
+        private System.Windows.Forms.Button BSGSBtn;
     }
 }
 
