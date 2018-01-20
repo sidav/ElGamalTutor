@@ -90,7 +90,9 @@ namespace ElgamalTutor
             //    an = (an * a) % m;
 
             BigInteger tick = n / 50; // for progressbar
-            int progressQuantum = (progress.Width / 100);
+            if (tick == 0)
+                tick = 1;
+            // int progressQuantum = (progress.Width / 100);
 
             for (i = 1, curKey = an; i <= n; ++i) // 3
             {
@@ -98,9 +100,9 @@ namespace ElgamalTutor
                     map.Add(curKey, i);
                 curKey = (curKey * an) % m;
 
-                if (!(progress is null)) // progressbar
+                if (progress != null) // progressbar
                     if (i % tick == 0)          // progressbar!
-                        progress.Increment(progressQuantum);  //
+                        progress.Increment(progress.Width / 100);  //
             }
 
             for (i = 0, curKey = b; i <= n; ++i) // 4
@@ -112,9 +114,9 @@ namespace ElgamalTutor
                 }
                 curKey = (curKey * a) % m;
 
-                if (!(progress is null)) // progressbar
+                if (progress != null) // progressbar
                     if (i % tick == 0)          // progressbar!
-                        progress.Increment(progressQuantum);  //
+                        progress.Increment(progress.Width / 100);  //
 
             }
 

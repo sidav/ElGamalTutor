@@ -33,6 +33,7 @@ namespace ElgamalTutor
             BigInteger.TryParse(ABox.Text, out a);
             BigInteger.TryParse(BBox.Text, out b);
             BigInteger.TryParse(MBox.Text, out m);
+
             if (a < 2 || b < 0 || m < 3 || b > m)
                 ResultLabel.Text = "Неправильный ввод данных";
             else if (!(matan.isPrime(m)))
