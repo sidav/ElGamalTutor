@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Taher_Elgamal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Taher_Elgamal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shanks1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gelfond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gelfond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Идея алгоритма состоит в выборе оптимального соотношения времени и памяти, а именно в усовершенствованном поиске показателя степени.
+Задача сводится к нахождению целого числа x, для которого выполняется
+α^x = β mod n. (1)
+
+Алгоритм Гельфонда — Шенкса основан на представлении x в виде 
+x = i ⋅ m − j, где m = √n  + 1, и переборе 1 ≤ i ≤ m и 0 ≤ j &lt; m. Ограничение на i и j следует из того, что порядок группы не превосходит m, а значит указанные диапазоны достаточны для получения всех возможных x из полуинтервала [ 0 ; m ). Такое представление равносильно равенству
+α^im=βα^j     	
+Алгоритм предварительно вычисляет α^im для разных значений i и сохраняет их в структуре данных, позволяющей эффективный поиск, а затем перебирает всевозможные значения j и проверяет, если βα^j соответствует какому-то значению i. Таким образом находятся индексы i и j, которые удовлетворяют соотношению (1) и позволяют вычислить значение x = i * m − j </value>
   </data>
 </root>

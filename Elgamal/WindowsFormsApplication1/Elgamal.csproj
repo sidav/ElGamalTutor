@@ -104,6 +104,24 @@
     <Compile Include="DiscrLogTutor.Designer.cs">
       <DependentUpon>DiscrLogTutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GelfondShanksAlgorithmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelfondShanksAlgorithmForm.Designer.cs">
+      <DependentUpon>GelfondShanksAlgorithmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelfondShanksInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelfondShanksInfoForm.Designer.cs">
+      <DependentUpon>GelfondShanksInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelfondShanksTheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelfondShanksTheoryForm.Designer.cs">
+      <DependentUpon>GelfondShanksTheoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +242,15 @@
     <EmbeddedResource Include="EncryptForm.resx">
       <DependentUpon>EncryptForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GelfondShanksAlgorithmForm.resx">
+      <DependentUpon>GelfondShanksAlgorithmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelfondShanksInfoForm.resx">
+      <DependentUpon>GelfondShanksInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelfondShanksTheoryForm.resx">
+      <DependentUpon>GelfondShanksTheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,6 +341,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Taher_Elgamal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gelfond1.jpg" />
+    <None Include="Resources\Shanks1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
