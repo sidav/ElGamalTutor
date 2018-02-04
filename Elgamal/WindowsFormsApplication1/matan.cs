@@ -15,7 +15,7 @@ namespace ElgamalTutor
     {
         public static Random rand = new Random();
         public static int MILLER_RABIN_ROUNDS = 4000;
-        public static long DIGITS = 20;
+        public const long DIGITS = 20;
 
         public static BigInteger phi(BigInteger n)
         {
@@ -133,7 +133,7 @@ namespace ElgamalTutor
             return -1;
         }
 
-        public static BigInteger genSimpleRand()
+        public static BigInteger genSimpleRand(long decDigits/*=DIGITS*/)
         {
             BigInteger a = new BigInteger(0);
             BigInteger pow = 1;
@@ -141,7 +141,7 @@ namespace ElgamalTutor
             {
                 a = 0;
                 pow = 1;
-                for (long i = 0; i < DIGITS; i++)
+                for (long i = 0; i < decDigits; i++)
                 {
                     BigInteger rnd = (rand.Next(8)+1) * pow;
                     a += rnd;
@@ -151,13 +151,13 @@ namespace ElgamalTutor
             return a;
         }
 
-        public static BigInteger genRand()
+        public static BigInteger genRand(long decDigits/* = DIGITS*/)
         {
             BigInteger a = new BigInteger(0);
             BigInteger pow = 1;
                 a = 0;
                 pow = 1;
-                for (long i = 0; i < DIGITS; i++)
+                for (long i = 0; i < decDigits; i++)
                 {
                     BigInteger rnd = rand.Next(10) * pow;
                     a += rnd;

@@ -67,10 +67,10 @@ namespace ElgamalTutor
 
         private void genkBtn_Click(object sender, EventArgs e)
         {
-            matan.DIGITS = 10;
+            // matan.DIGITS = 10;
             do
             {
-                k = matan.genRand();
+                k = matan.genRand(10);
             } while (k > p - 1);
             kBox.Text = k.ToString();
         }

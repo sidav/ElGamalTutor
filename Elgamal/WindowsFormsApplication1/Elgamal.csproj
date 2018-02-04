@@ -86,6 +86,12 @@
     <Compile Include="DecryptForm.Designer.cs">
       <DependentUpon>DecryptForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiscreteLogAlgorithmsInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscreteLogAlgorithmsInfoForm.Designer.cs">
+      <DependentUpon>DiscreteLogAlgorithmsInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ElGamalInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DecryptForm.resx">
       <DependentUpon>DecryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscreteLogAlgorithmsInfoForm.resx">
+      <DependentUpon>DiscreteLogAlgorithmsInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DiscrLogTutor.resx">
       <DependentUpon>DiscrLogTutor.cs</DependentUpon>

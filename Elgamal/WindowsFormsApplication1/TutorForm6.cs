@@ -39,7 +39,7 @@ namespace ElgamalTutor
         {
             do
             {
-                k = matan.genRand();
+                k = matan.genRand(20);
             } while (k > p - 1);
             kBox.Text = k.ToString();
         }

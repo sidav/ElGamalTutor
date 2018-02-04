@@ -25,6 +25,7 @@ namespace ElgamalTutor
         public static bool[] EulerAnswers = new bool[3];
         public static bool[] ReverseAnswers = new bool[2];
         public static bool[] DiscreteLogAnswers = new bool[2];
+        public static bool[] AlgorithmicDLOGAnswers = new bool[2];
         public static bool[] TestAnswers = new bool[6];
     }
 }

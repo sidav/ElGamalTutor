@@ -20,10 +20,11 @@ namespace ElgamalTutor
         private BigInteger a = new BigInteger(0);
         private BigInteger b = new BigInteger(0);
         private BigInteger M = new BigInteger(0);
+        private long digits = 10;
         public DecryptForm()
         {
             InitializeComponent();
-            digitsBox.Text = matan.DIGITS.ToString();
+            digitsBox.Text = digits.ToString();
         }
 
         private void genpgBtn_Click(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace ElgamalTutor
                     g = 3;
                     break;
                 default:
-                    p = matan.genSimpleRand();
+                    p = matan.genSimpleRand(digits);
                     g = matan.calculateFakePrimitiveRoot(p);            
                     break;
             }
@@ -54,7 +55,7 @@ namespace ElgamalTutor
         {
             if (p > 2)
                 do
-                    x = matan.genRand();
+                    x = matan.genRand(digits);
                 while (x == 0 || x >= p);
             xBox.Text = x.ToString();
         }
@@ -80,7 +81,7 @@ namespace ElgamalTutor
         {
             int i;
             if (int.TryParse(digitsBox.Text, out i) && i >= 0)
-                matan.DIGITS = i;
+                digits = i;
         }
 
         private void pBox_TextChanged(object sender, EventArgs e)

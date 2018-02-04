@@ -24,7 +24,7 @@ namespace ElgamalTutor
 
         private void generatepBtn_Click(object sender, EventArgs e)
         {
-            modulo = matan.genSimpleRand();
+            modulo = matan.genSimpleRand(digits);
             pBox.Text = modulo.ToString();
         }
 
@@ -50,7 +50,7 @@ namespace ElgamalTutor
         private void digitsBox_TextChanged(object sender, EventArgs e)
         {
             if (int.TryParse(digitsBox.Text, out digits))
-                 matan.DIGITS = digits;
+                return;
         }
     }
 }

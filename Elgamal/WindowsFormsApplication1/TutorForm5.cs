@@ -17,16 +17,17 @@ namespace ElgamalTutor
         private BigInteger g = new BigInteger(0);
         private BigInteger x = new BigInteger(0);
         private BigInteger y = new BigInteger(0);
+        private long digits = 30;
         public TutorForm5()
         {
-            matan.DIGITS = 30;
+            digits = 30;
             InitializeComponent();                
         }
 
         //генерация р
         private void generatepBtn_Click(object sender, EventArgs e)
         {
-            p = matan.genSimpleRand();
+            p = matan.genSimpleRand(digits);
             gtextBox.Text = "";
             xtextBox.Text = "";
             ytextBox.Text = "";
@@ -49,7 +50,7 @@ namespace ElgamalTutor
         {
             if (p>2) 
                  do
-                    x = matan.genRand();
+                    x = matan.genRand(digits);
                  while (x == 0 || x >= p);
             xtextBox.Text = x.ToString();
         }

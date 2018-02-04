@@ -48,6 +48,7 @@ namespace ElgamalTutor
             formList.Add(new TutorForm6());
             formList.Add(new TutorForm7());
             formList.Add(new DiscrLogTutor());
+            formList.Add(new DiscreteLogAlgorithmsInfoForm());
             formList.Add(new GelfondShanksInfoForm());
             formList.Add(new GelfondShanksTheoryForm());
             formList.Add(new GelfondShanksAlgorithmForm());
