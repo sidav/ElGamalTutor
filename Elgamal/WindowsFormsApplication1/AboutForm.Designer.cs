@@ -49,7 +49,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Версия 1.1";
+            this.label2.Text = "Версия 1.3";
             // 
             // label3
             // 
@@ -58,7 +58,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(199, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Автор:   Ковун В. А.  ВГУ ПММ 2016 г.";
+            this.label3.Text = "Автор:   Ковун В. А.  ВГУ ПММ 2018 г.";
             // 
             // AboutForm
             // 

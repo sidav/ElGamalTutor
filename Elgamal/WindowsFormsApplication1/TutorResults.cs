@@ -64,6 +64,16 @@ namespace ElgamalTutor
                 DiscreteLogAnsLabel2.Text += "Верно";
             else
                 DiscreteLogAnsLabel2.Text += "Неверно";
+            if (Answers.AlgorithmicDLOGAnswers[0])
+                AlgAnsLabel1.Text += "Верно";
+            else
+                AlgAnsLabel1.Text += "Неверно";
+            if (Answers.AlgorithmicDLOGAnswers[1])
+                AlgAnsLabel2.Text += "Верно";
+            else
+                AlgAnsLabel2.Text += "Неверно";
+
+            //////////////////////////
 
             if (Answers.TestAnswers[0])
                 TestAnswer1Label.Text += "Верно";
@@ -91,8 +101,10 @@ namespace ElgamalTutor
                 TestAnswer6Label.Text += "Неверно";
 
             //Some LINQ magic
-            double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) + Answers.ReverseAnswers.Sum(a => a ? 1 : 0) + Answers.DiscreteLogAnswers.Sum(a => a ? 1 : 0) + Answers.TestAnswers.Sum(a => a ? 1 : 0);
-            double FinalMark = 3 * (summa / 16) + 2;
+            double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) 
+                + Answers.ReverseAnswers.Sum(a => a ? 1 : 0) + Answers.DiscreteLogAnswers.Sum(a => a ? 1 : 0) 
+                + Answers.TestAnswers.Sum(a => a ? 1 : 0) + Answers.AlgorithmicDLOGAnswers.Sum(a => a ? 1 : 0);
+            double FinalMark = 3 * (summa / 18) + 2;
             if (FinalMark % 1 >= 0.5)
                 FinalMark += 1;
             FinalMarkLabel.Text = ((int)FinalMark).ToString();
