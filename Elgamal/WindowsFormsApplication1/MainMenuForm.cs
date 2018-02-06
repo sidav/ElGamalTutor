@@ -55,6 +55,7 @@ namespace ElgamalTutor
             formList.Add(new TestQuestionsForm1());
             formList.Add(new TestQuestionsForm2());
             formList.Add(new TestQuestionsForm3());
+            formList.Add(new TestQuestionsForm4());
             formList.Add(new TutorResults());
 
             while (!Answers.tutorialEnded && !Answers.interruptTutorial)

@@ -19,8 +19,8 @@ namespace ElgamalTutor
 
         private void nextBtn_Click(object sender, EventArgs e)
         {
-            Answers.TestAnswers[7] = TrueAnswer3RButton.Checked;
-            Answers.TestAnswers[8] = TrueAnswer4RButton.Checked;
+            Answers.TestAnswers[6] = TrueAnswer3RButton.Checked;
+            Answers.TestAnswers[7] = TrueAnswer4RButton.Checked;
             Answers.interruptTutorial = false;
             this.Close();
         }
