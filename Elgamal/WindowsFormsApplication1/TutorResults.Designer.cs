@@ -55,6 +55,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.AlgAnsLabel1 = new System.Windows.Forms.Label();
             this.AlgAnsLabel2 = new System.Windows.Forms.Label();
+            this.TestAnswer8Label = new System.Windows.Forms.Label();
+            this.TestAnswer7Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -243,7 +245,7 @@
             // TestAnswer3Label
             // 
             this.TestAnswer3Label.AutoSize = true;
-            this.TestAnswer3Label.Location = new System.Drawing.Point(129, 285);
+            this.TestAnswer3Label.Location = new System.Drawing.Point(111, 285);
             this.TestAnswer3Label.Name = "TestAnswer3Label";
             this.TestAnswer3Label.Size = new System.Drawing.Size(30, 13);
             this.TestAnswer3Label.TabIndex = 21;
@@ -252,7 +254,7 @@
             // TestAnswer4Label
             // 
             this.TestAnswer4Label.AutoSize = true;
-            this.TestAnswer4Label.Location = new System.Drawing.Point(129, 307);
+            this.TestAnswer4Label.Location = new System.Drawing.Point(111, 307);
             this.TestAnswer4Label.Name = "TestAnswer4Label";
             this.TestAnswer4Label.Size = new System.Drawing.Size(30, 13);
             this.TestAnswer4Label.TabIndex = 22;
@@ -261,7 +263,7 @@
             // TestAnswer5Label
             // 
             this.TestAnswer5Label.AutoSize = true;
-            this.TestAnswer5Label.Location = new System.Drawing.Point(235, 285);
+            this.TestAnswer5Label.Location = new System.Drawing.Point(185, 285);
             this.TestAnswer5Label.Name = "TestAnswer5Label";
             this.TestAnswer5Label.Size = new System.Drawing.Size(30, 13);
             this.TestAnswer5Label.TabIndex = 23;
@@ -270,7 +272,7 @@
             // TestAnswer6Label
             // 
             this.TestAnswer6Label.AutoSize = true;
-            this.TestAnswer6Label.Location = new System.Drawing.Point(235, 307);
+            this.TestAnswer6Label.Location = new System.Drawing.Point(185, 307);
             this.TestAnswer6Label.Name = "TestAnswer6Label";
             this.TestAnswer6Label.Size = new System.Drawing.Size(30, 13);
             this.TestAnswer6Label.TabIndex = 24;
@@ -303,11 +305,31 @@
             this.AlgAnsLabel2.TabIndex = 27;
             this.AlgAnsLabel2.Text = "№2: ";
             // 
+            // TestAnswer8Label
+            // 
+            this.TestAnswer8Label.AutoSize = true;
+            this.TestAnswer8Label.Location = new System.Drawing.Point(272, 307);
+            this.TestAnswer8Label.Name = "TestAnswer8Label";
+            this.TestAnswer8Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer8Label.TabIndex = 29;
+            this.TestAnswer8Label.Text = "№8: ";
+            // 
+            // TestAnswer7Label
+            // 
+            this.TestAnswer7Label.AutoSize = true;
+            this.TestAnswer7Label.Location = new System.Drawing.Point(272, 285);
+            this.TestAnswer7Label.Name = "TestAnswer7Label";
+            this.TestAnswer7Label.Size = new System.Drawing.Size(30, 13);
+            this.TestAnswer7Label.TabIndex = 28;
+            this.TestAnswer7Label.Text = "№7: ";
+            // 
             // TutorResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 414);
+            this.Controls.Add(this.TestAnswer8Label);
+            this.Controls.Add(this.TestAnswer7Label);
             this.Controls.Add(this.AlgAnsLabel2);
             this.Controls.Add(this.AlgAnsLabel1);
             this.Controls.Add(this.label7);
@@ -373,5 +395,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label AlgAnsLabel1;
         private System.Windows.Forms.Label AlgAnsLabel2;
+        private System.Windows.Forms.Label TestAnswer8Label;
+        private System.Windows.Forms.Label TestAnswer7Label;
     }
 }

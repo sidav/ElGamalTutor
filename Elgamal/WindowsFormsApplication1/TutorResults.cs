@@ -99,12 +99,20 @@ namespace ElgamalTutor
                 TestAnswer6Label.Text += "Верно";
             else
                 TestAnswer6Label.Text += "Неверно";
+            if (Answers.TestAnswers[6])
+                TestAnswer7Label.Text += "Верно";
+            else
+                TestAnswer7Label.Text += "Неверно";
+            if (Answers.TestAnswers[7])
+                TestAnswer8Label.Text += "Верно";
+            else
+                TestAnswer8Label.Text += "Неверно";
 
             //Some LINQ magic
             double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) 
                 + Answers.ReverseAnswers.Sum(a => a ? 1 : 0) + Answers.DiscreteLogAnswers.Sum(a => a ? 1 : 0) 
                 + Answers.TestAnswers.Sum(a => a ? 1 : 0) + Answers.AlgorithmicDLOGAnswers.Sum(a => a ? 1 : 0);
-            double FinalMark = 3 * (summa / 18) + 2;
+            double FinalMark = 3 * (summa / 20) + 2;
             if (FinalMark % 1 >= 0.5)
                 FinalMark += 1;
             FinalMarkLabel.Text = ((int)FinalMark).ToString();
