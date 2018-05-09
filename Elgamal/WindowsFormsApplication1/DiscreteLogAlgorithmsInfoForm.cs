@@ -30,12 +30,12 @@ namespace ElgamalTutor
             // textBox2.Select(0, 0);
             base1 = new BigInteger(r.Next(100000) + 2);
             base2 = new BigInteger(r.Next(100000) + 2);
-            mod1 = matan.genSimpleRand(8);
+            mod1 = CryptoMath.genSimpleRand(8);
             if (mod1 == base1) mod1++;
-            mod2 = matan.genSimpleRand(8);
+            mod2 = CryptoMath.genSimpleRand(8);
             if (mod2 == base2) mod1++;
-            BigInteger rnd1 = matan.genRand(100000);
-            BigInteger rnd2 = matan.genRand(100000);
+            BigInteger rnd1 = CryptoMath.genRand(100000);
+            BigInteger rnd2 = CryptoMath.genRand(100000);
             num1 = BigInteger.ModPow(base1, rnd1, mod1);
             num2 = BigInteger.ModPow(base2, rnd2, mod2);
             Task1Label.Text =

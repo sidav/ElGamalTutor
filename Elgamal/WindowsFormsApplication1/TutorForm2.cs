@@ -43,9 +43,9 @@ namespace ElgamalTutor
         {
             if (BigInteger.TryParse(answerBox1.Text, out ans1) && BigInteger.TryParse(answerBox2.Text, out ans2) && BigInteger.TryParse(answerBox3.Text, out ans3))
             {
-                Answers.EulerAnswers[0] = (ans1 == matan.phi(fi1));
-                Answers.EulerAnswers[1] = (ans2 == matan.phi(fi2));
-                Answers.EulerAnswers[2] = (ans3 == matan.phi(fi3));
+                Answers.EulerAnswers[0] = (ans1 == CryptoMath.phi(fi1));
+                Answers.EulerAnswers[1] = (ans2 == CryptoMath.phi(fi2));
+                Answers.EulerAnswers[2] = (ans3 == CryptoMath.phi(fi3));
                 //var newForm = new TutorForm3();
                 //newForm.Show();
                 Answers.interruptTutorial = false;

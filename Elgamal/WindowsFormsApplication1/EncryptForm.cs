@@ -70,7 +70,7 @@ namespace ElgamalTutor
             // matan.DIGITS = 10;
             do
             {
-                k = matan.genRand(10);
+                k = CryptoMath.genRand(10);
             } while (k > p - 1);
             kBox.Text = k.ToString();
         }

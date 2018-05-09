@@ -134,7 +134,7 @@
     <Compile Include="MainMenuForm.Designer.cs">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="matan.cs" />
+    <Compile Include="CryptoMath.cs" />
     <Compile Include="modPowForm.cs">
       <SubType>Form</SubType>
     </Compile>

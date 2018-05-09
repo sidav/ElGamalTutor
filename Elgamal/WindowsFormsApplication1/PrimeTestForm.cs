@@ -26,7 +26,7 @@ namespace ElgamalTutor
             BigInteger.TryParse(inputBox.Text, out testInt);
             if (testInt > 0)
             {
-                if (matan.isPrime(testInt))
+                if (CryptoMath.isPrime(testInt))
                     ansLabel.Text = "Введённое число - простое";
                 else ansLabel.Text = "Введённое число - составное";
             }

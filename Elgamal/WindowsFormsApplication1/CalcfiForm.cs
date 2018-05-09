@@ -23,7 +23,7 @@ namespace ElgamalTutor
         {
             this.Enabled = false;
             input = BigInteger.Parse(inputBox.Text);
-            input = matan.phi(input);
+            input = CryptoMath.phi(input);
             outputBox.Text = input.ToString();
             label2.Visible = true;
             outputBox.Visible = true;

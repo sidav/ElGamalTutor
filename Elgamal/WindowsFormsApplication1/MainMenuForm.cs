@@ -17,15 +17,16 @@ namespace ElgamalTutor
            InitializeComponent();
         }
 
-        private static void debugAnswers()
-        {
-            Answers.modpowAnswers = new bool[]{ true, true, true };
-            Answers.EulerAnswers = new bool[] { true, true, true };
-            Answers.ReverseAnswers = new bool[] { true, true};
-            Answers.DiscreteLogAnswers = new bool[] { true, true };
-            Answers.TestAnswers = new bool[] { true, true, true,true,true,true};
+        //private static void debugAnswers()
+        //{
+        //    Answers.modpowAnswers = new bool[]{ true, true, true };
+        //    Answers.EulerAnswers = new bool[] { true, true, true };
+        //    Answers.ReverseAnswers = new bool[] { true, true};
+        //    Answers.DiscreteLogAnswers = new bool[] { true, true };
+        //    Answers.AlgorithmicDLOGAnswers = new bool[] { true, true };
+        //    Answers.TestAnswers = new bool[] { true, true, true,true,true, true, true, true};
 
-        }
+        //}
 
         private void startTutorBtn_Click(object sender, EventArgs e)
         {
@@ -33,10 +34,10 @@ namespace ElgamalTutor
             Answers.formToShow = 0;
             var formList = new List<Form>();
 
-            //REMOVE
+            ////REMOVE
             //debugAnswers();
-            //formList.Add(new TutorResults()); 
-            //REMOVE
+            //(new TutorResults()).ShowDialog();
+            ////REMOVE
 
             formList.Add(new TutorIntroForm());
             formList.Add(new TutorForm1());

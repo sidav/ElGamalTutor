@@ -36,7 +36,7 @@ namespace ElgamalTutor
 
             if (a < 2 || b < 0 || m < 3 || b > m)
                 ResultLabel.Text = "Неправильный ввод данных";
-            else if (!(matan.isPrime(m)))
+            else if (!(CryptoMath.isPrime(m)))
                 ResultLabel.Text = "М должно быть простым";
             else
             {

@@ -11,7 +11,7 @@ using System.Numerics;
 
 namespace ElgamalTutor
 {
-    class matan
+    class CryptoMath
     {
         public static Random rand = new Random();
         public static int MILLER_RABIN_ROUNDS = 4000;

@@ -27,7 +27,7 @@ namespace ElgamalTutor
         //генерация р
         private void generatepBtn_Click(object sender, EventArgs e)
         {
-            p = matan.genSimpleRand(digits);
+            p = CryptoMath.genSimpleRand(digits);
             gtextBox.Text = "";
             xtextBox.Text = "";
             ytextBox.Text = "";
@@ -38,10 +38,10 @@ namespace ElgamalTutor
         {
             this.Enabled = false;
             if (p>2) 
-                if (matan.DIGITS > 10)
-                    g = matan.calculateFakePrimitiveRoot(p);
+                if (CryptoMath.DIGITS > 10)
+                    g = CryptoMath.calculateFakePrimitiveRoot(p);
                 else
-                    g = matan.calculatePrimitiveRoot(p);
+                    g = CryptoMath.calculatePrimitiveRoot(p);
             gtextBox.Text = g.ToString();
             this.Enabled = true;
         }
@@ -50,7 +50,7 @@ namespace ElgamalTutor
         {
             if (p>2) 
                  do
-                    x = matan.genRand(digits);
+                    x = CryptoMath.genRand(digits);
                  while (x == 0 || x >= p);
             xtextBox.Text = x.ToString();
         }
@@ -64,7 +64,7 @@ namespace ElgamalTutor
 
         private void nextBtn_Click(object sender, EventArgs e)
         {
-            if (matan.isPrime(p) && p > 2 && x > 1 && g > 1 && y > 0)
+            if (CryptoMath.isPrime(p) && p > 2 && x > 1 && g > 1 && y > 0)
             {
                 //var newForm = new TutorForm6(g, p, y, x);
                 //newForm.Show();
@@ -75,7 +75,7 @@ namespace ElgamalTutor
                 Answers.interruptTutorial = false;
                 this.Close();
             }
-            if (!matan.isPrime(p)) wrongpLabel.Visible = true;
+            if (!CryptoMath.isPrime(p)) wrongpLabel.Visible = true;
         }
 
         private void ptextBox_TextChanged(object sender, EventArgs e)

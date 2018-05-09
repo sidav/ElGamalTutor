@@ -263,7 +263,7 @@
             // TestAnswer5Label
             // 
             this.TestAnswer5Label.AutoSize = true;
-            this.TestAnswer5Label.Location = new System.Drawing.Point(185, 285);
+            this.TestAnswer5Label.Location = new System.Drawing.Point(194, 285);
             this.TestAnswer5Label.Name = "TestAnswer5Label";
             this.TestAnswer5Label.Size = new System.Drawing.Size(30, 13);
             this.TestAnswer5Label.TabIndex = 23;
@@ -272,7 +272,7 @@
             // TestAnswer6Label
             // 
             this.TestAnswer6Label.AutoSize = true;
-            this.TestAnswer6Label.Location = new System.Drawing.Point(185, 307);
+            this.TestAnswer6Label.Location = new System.Drawing.Point(194, 307);
             this.TestAnswer6Label.Name = "TestAnswer6Label";
             this.TestAnswer6Label.Size = new System.Drawing.Size(30, 13);
             this.TestAnswer6Label.TabIndex = 24;

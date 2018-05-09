@@ -43,8 +43,8 @@ namespace ElgamalTutor
                     g = 3;
                     break;
                 default:
-                    p = matan.genSimpleRand(digits);
-                    g = matan.calculateFakePrimitiveRoot(p);            
+                    p = CryptoMath.genSimpleRand(digits);
+                    g = CryptoMath.calculateFakePrimitiveRoot(p);            
                     break;
             }
             pBox.Text = p.ToString();
@@ -55,7 +55,7 @@ namespace ElgamalTutor
         {
             if (p > 2)
                 do
-                    x = matan.genRand(digits);
+                    x = CryptoMath.genRand(digits);
                 while (x == 0 || x >= p);
             xBox.Text = x.ToString();
         }

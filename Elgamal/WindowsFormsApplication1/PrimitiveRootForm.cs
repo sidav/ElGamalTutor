@@ -24,7 +24,7 @@ namespace ElgamalTutor
 
         private void generatepBtn_Click(object sender, EventArgs e)
         {
-            modulo = matan.genSimpleRand(digits);
+            modulo = CryptoMath.genSimpleRand(digits);
             pBox.Text = modulo.ToString();
         }
 
@@ -36,14 +36,14 @@ namespace ElgamalTutor
         private void trueGenBtn1_Click(object sender, EventArgs e)
         {
             if (modulo < 3) pBox.Text = "12345"; 
-            primit = matan.calculatePrimitiveRoot(modulo);
+            primit = CryptoMath.calculatePrimitiveRoot(modulo);
             trueBox.Text = primit.ToString();
         }
 
         private void fakeGenBtn_Click(object sender, EventArgs e)
         {
             if (modulo < 3) pBox.Text = "12345"; 
-            primit = matan.calculateFakePrimitiveRoot(modulo);
+            primit = CryptoMath.calculateFakePrimitiveRoot(modulo);
             fakeBox.Text = primit.ToString();
         }
 
