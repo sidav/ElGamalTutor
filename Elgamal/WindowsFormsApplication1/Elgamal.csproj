@@ -141,6 +141,7 @@
     <Compile Include="modPowForm.Designer.cs">
       <DependentUpon>modPowForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PollardsRho.cs" />
     <Compile Include="PrimeTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
