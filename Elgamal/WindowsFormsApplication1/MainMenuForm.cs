@@ -119,7 +119,7 @@ namespace ElgamalTutor
 
         private void BSGSBtn_Click(object sender, EventArgs e)
         {
-            var newForm = new BSGSForm();
+            var newForm = new DiscreteLogarithmCalculationForm();
             newForm.ShowDialog();
         }
     }

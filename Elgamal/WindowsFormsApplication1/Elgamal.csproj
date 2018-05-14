@@ -68,11 +68,12 @@
     </Compile>
     <Compile Include="Answers.cs" />
     <Compile Include="BabyStepGiantStep.cs" />
-    <Compile Include="BSGSForm.cs">
+    <Compile Include="BigIntegerSqrt.cs" />
+    <Compile Include="DiscreteLogarithmCalculationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BSGSForm.Designer.cs">
-      <DependentUpon>BSGSForm.cs</DependentUpon>
+    <Compile Include="DiscreteLogarithmCalculationForm.Designer.cs">
+      <DependentUpon>DiscreteLogarithmCalculationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CalcfiForm.cs">
       <SubType>Form</SubType>
@@ -156,6 +157,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SilverPohligHellman.cs" />
     <Compile Include="TestQuestionsForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,8 +239,8 @@
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BSGSForm.resx">
-      <DependentUpon>BSGSForm.cs</DependentUpon>
+    <EmbeddedResource Include="DiscreteLogarithmCalculationForm.resx">
+      <DependentUpon>DiscreteLogarithmCalculationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalcfiForm.resx">
       <DependentUpon>CalcfiForm.cs</DependentUpon>

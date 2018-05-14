@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
+using System.Windows.Forms;
 
 namespace ElgamalTutor
 {
     class Pollards_Rho
     {
-        public static BigInteger[] ext_euclid(BigInteger a, BigInteger b)
+        static BigInteger[] ext_euclid(BigInteger a, BigInteger b)
         {
             if (b == 0)
             {
@@ -27,12 +28,12 @@ namespace ElgamalTutor
             }
         }
 
-        public static BigInteger inverse(BigInteger a, BigInteger n)
+        static BigInteger inverse(BigInteger a, BigInteger n)
         {
             return ext_euclid(a, n)[1];
         }
 
-        public static BigInteger[] PollardStep(BigInteger x, BigInteger a, BigInteger b, BigInteger G, BigInteger H, BigInteger P, BigInteger Q)
+        static BigInteger[] PollardStep(BigInteger x, BigInteger a, BigInteger b, BigInteger G, BigInteger H, BigInteger P, BigInteger Q)
         {
             BigInteger sub = x % 3;
             if (sub == 0)
@@ -56,7 +57,7 @@ namespace ElgamalTutor
             return new BigInteger[] { x, a, b };
         }
 
-        public static BigInteger Pollard(BigInteger G, BigInteger H, BigInteger P)
+        public static BigInteger Pollard(BigInteger G, BigInteger H, BigInteger P, ProgressBar progress = null)
         {
             BigInteger Q = (P - 1) / 2;
             // Console.WriteLine($"Q = {Q}");
@@ -69,8 +70,18 @@ namespace ElgamalTutor
             BigInteger A = a;
             BigInteger B = b;
 
+            progress.Increment(progress.Width / 10);
+
+            BigInteger tick = P / 100; // for progressbar
+            if (tick == 0)
+                tick = 1;
+
             for (BigInteger i = 1; i < P; i++)
             {
+                //if (progress != null) // progressbar
+                //    if (i % tick == 0)          // progressbar!
+                progress.Increment(progress.Width / 100);  //
+
                 BigInteger[] hedgehog = PollardStep(x, a, b, G, H, P, Q);
                 x = hedgehog[0];
                 a = hedgehog[1];
@@ -96,9 +107,10 @@ namespace ElgamalTutor
             BigInteger res = (inverse(denom, Q) * nom) % Q;
             if (res >= 0 && BigInteger.ModPow(G, res, P) == H)
                 return res;
-            return res + Q;
+            else if (BigInteger.ModPow(G, res + Q, P) == H)
+                return res + Q;
+            else
+                return -1;
         }
-
-
     }
 }
