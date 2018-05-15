@@ -94,7 +94,7 @@
             this.Controls.Add(this.endBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "SPHInfoForm";
-            this.Text = "SPHInfoForm";
+            this.Text = "Алгоритм Полига-Хеллмана";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
