@@ -11,7 +11,9 @@ namespace ElgamalTutor
     class SilverPohligHellman
     {
 
-        public static List<BigInteger> PrimeFactorization(BigInteger p, ProgressBar progress)
+        static ProgressBar progress;
+
+        public static List<BigInteger> PrimeFactorization(BigInteger p)
         {
             BigInteger d = 2;
             List<BigInteger> primeFactors = new List<BigInteger>();
@@ -30,20 +32,20 @@ namespace ElgamalTutor
                     p /= d;
                 }
                 d += 2;
-                progress.Increment(progress.Width / 50);
+                progress.Increment(progress.Width / 100);
             }
             if (p > 1)
                 primeFactors.Add(p);
             return primeFactors;
         }
 
-        public static List<BigInteger[]> CountOccurences(List<BigInteger> primeFactors, ProgressBar progress)
+        public static List<BigInteger[]> CountOccurences(List<BigInteger> primeFactors)
         {
             List<BigInteger[]> res = new List<BigInteger[]>();
             var set_of_unique = primeFactors.Select(value => value).Distinct();
             foreach (var x in set_of_unique)
             {
-                progress.Increment(progress.Width / 50);
+                progress.Increment(progress.Width / 100);
                 res.Add(new BigInteger[] { x, primeFactors.Count(elem => elem == x) });
             }
             return res;
@@ -95,9 +97,11 @@ namespace ElgamalTutor
             {
                 // BigInteger[] ni = pairs[i,];
                 N *= pairs[i][1];
+                progress.Value = 100 * (pairs.Count * 2 / i);
             }
             for (int i = 0; i < pairs.Count; i++)
             {
+                progress.Value = (int)(pairs.Count * 2 / (i+1));
                 BigInteger ai = pairs[i][0];
                 BigInteger ni = pairs[i][1];
                 BigInteger mi = (N / ni);
@@ -148,6 +152,7 @@ namespace ElgamalTutor
             BigInteger x = 0;
             for (BigInteger i = 1; i < e+1; i++)
             {
+                progress.Value = 100 * (int)(i / e+1);
                 BigInteger a = BigInteger.ModPow(e1, q.Power(e - 1), p);
                 BigInteger b = BigInteger.ModPow(e2 * alphaInverse.Power(x), q.Power(e - i), p);
                 x += ShanksAlgorithm(a, b, p) * (q.Power(i - 1));
@@ -155,9 +160,10 @@ namespace ElgamalTutor
             return new BigInteger[] { x, q.Power(e) };
         }
 
-        public static BigInteger PohligHellman(BigInteger h, BigInteger g, BigInteger p, ProgressBar progress = null)
+        public static BigInteger PohligHellman(BigInteger h, BigInteger g, BigInteger p, ProgressBar prg = null)
         {
-            List<BigInteger[]> CountOccurencesList = CountOccurences(PrimeFactorization(p - 1, progress), progress);
+            progress = prg;
+            List<BigInteger[]> CountOccurencesList = CountOccurences(PrimeFactorization(p - 1));
 
             //foreach (var fuck in CountOccurencesList)
             //{
@@ -172,12 +178,16 @@ namespace ElgamalTutor
             var CongruenceList = new List<BigInteger[]>();
             for (int i = 0; i < CountOccurencesList.Count; i++)
             {
+                progress.Value = 100 * (i+1) / (CountOccurencesList.Count+1);
+                progress.Update();
+                progress.Refresh();
+                progress.Invalidate();
                 BigInteger e1 = (h.Power((p - 1) / (CountOccurencesList[i][0].Power(CountOccurencesList[i][1])))) % p;
                 BigInteger e2 = (g.Power((p - 1) / (CountOccurencesList[i][0].Power(CountOccurencesList[i][1])))) % p;
                 try
                 {
                     CongruenceList.Add(CongruencePair(g, h, p, CountOccurencesList[i][0], CountOccurencesList[i][1], e1, e2));
-                    progress.Increment(progress.Width / CountOccurencesList.Count);
+                    // progress.Increment(upd_value);
                 }
                 catch(Exception e)
                 {

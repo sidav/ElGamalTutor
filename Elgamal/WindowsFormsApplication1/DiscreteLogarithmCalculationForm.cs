@@ -97,7 +97,7 @@ namespace ElgamalTutor
             {
                 if (m.ToString().Length > 5)
                 {
-                    ResultLabel.Text = "Слишком большое М - \nВозможна нехватка памяти";
+                    ResultLabel.Text = "Слишком большое М - \nВозможно крайне долгое время работы";
                     ResultLabel.Visible = true;
                 }
                 try
@@ -119,8 +119,13 @@ namespace ElgamalTutor
                 {
                     ResultLabel.ForeColor = Color.Green;
                     ResultLabel.Text = $"X = {answer}";
+
                     if (BigInteger.ModPow(a, answer, m) != b)
-                        ResultLabel.Text += "?";
+                    {
+                        ResultLabel.ForeColor = Color.Red;
+                        ResultLabel.Text = "Такого Х не найдено";
+                    }
+                    // ResultLabel.Text += "?";
                 }
             }
             BSGSProgressBar.Visible = false;
@@ -176,8 +181,13 @@ namespace ElgamalTutor
                 {
                     ResultLabel.ForeColor = Color.Green;
                     ResultLabel.Text = $"X = {answer}";
+
                     if (BigInteger.ModPow(a, answer, m) != b)
-                        ResultLabel.Text += "?";
+                    {
+                        ResultLabel.ForeColor = Color.Red;
+                        ResultLabel.Text = "Такого Х не найдено";
+                    }
+                    //ResultLabel.Text += "?";
                 }
             }
             BSGSProgressBar.Visible = false;
@@ -187,12 +197,14 @@ namespace ElgamalTutor
 
         private void RandomDataButton_Click(object sender, EventArgs e)
         {
+            Random rand = new Random();
+            int size = rand.Next(11) + 2;
             BigInteger M = 0;
             while (!CryptoMath.isPrime((M-1)/2))
-                M = CryptoMath.genSimpleRand(7);
+                M = CryptoMath.genSimpleRand(size);
             MBox.Text = M.ToString();
-            ABox.Text = CryptoMath.genRand(5).ToString();
-            BBox.Text = CryptoMath.genRand(5).ToString();
+            ABox.Text = (CryptoMath.genRand(rand.Next(size - 1) + 1)+2).ToString();
+            BBox.Text = (CryptoMath.genRand(rand.Next(size - 1) + 1)).ToString();
         }
     }
 }

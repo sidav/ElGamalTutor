@@ -132,7 +132,7 @@
             // 
             // PohligButton
             // 
-            this.PohligButton.Location = new System.Drawing.Point(137, 143);
+            this.PohligButton.Location = new System.Drawing.Point(259, 143);
             this.PohligButton.Name = "PohligButton";
             this.PohligButton.Size = new System.Drawing.Size(131, 37);
             this.PohligButton.TabIndex = 10;
@@ -142,7 +142,7 @@
             // 
             // RhoButton
             // 
-            this.RhoButton.Location = new System.Drawing.Point(274, 143);
+            this.RhoButton.Location = new System.Drawing.Point(137, 143);
             this.RhoButton.Name = "RhoButton";
             this.RhoButton.Size = new System.Drawing.Size(116, 37);
             this.RhoButton.TabIndex = 11;

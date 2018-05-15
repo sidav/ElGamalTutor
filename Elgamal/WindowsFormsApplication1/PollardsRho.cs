@@ -72,15 +72,20 @@ namespace ElgamalTutor
 
             progress.Increment(progress.Width / 10);
 
-            BigInteger tick = P / 100; // for progressbar
+            BigInteger tick = P / 20; // for progressbar
             if (tick == 0)
                 tick = 1;
 
             for (BigInteger i = 1; i < P; i++)
             {
-                //if (progress != null) // progressbar
-                //    if (i % tick == 0)          // progressbar!
-                progress.Increment(progress.Width / 100);  //
+                if (progress != null) // progressbar
+                    if (i % tick == 0)          // progressbar!
+                    {
+                        progress.Increment(progress.Width / 20);  //
+                        progress.Update();
+                        progress.Refresh();
+                        progress.Invalidate();
+                    }
 
                 BigInteger[] hedgehog = PollardStep(x, a, b, G, H, P, Q);
                 x = hedgehog[0];
