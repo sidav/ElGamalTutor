@@ -117,20 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="JohnPollard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\JohnPollard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shanks1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Taher_Elgamal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Taher_Elgamal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gelfond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gelfond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MartinHellman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MartinHellman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Другим субэкспоненциальным алгоритмом дискретного логарифмирования является Алгоритм Полига – Хеллмана (также называемый алгоритм Силвера – Полига – Хеллмана) - детерминированный алгоритм дискретного логирифмирования в кольце вычетов по модулю простого числа. Для модулей специального вида данный алгоритм является полиномиальным. Данный алгоритм был впервые описан американскими математиками Роланом Силвером (Roland Silver), Стефаном Полигом (Stephan Pohlig) и Мартином Хеллманом (Martin Hellman) в 1978 году в статье "An improved algorithm for computing logarithms over GF(p) and its cryptographic significance". Важной особенностью этого метода является то, что для простых чисел специального вида, можно находить дискретный логарифм за полиномиальное время. 
+Суть алгоритма заключается в том, что для решения сравнения a^x = b mod p можно разложить p на простые множители q_i в степенях α_i, после чего  достаточно найти x по модулям q_i ^ α_i  для всех i, а затем решение исходного сравнения можно найти с помощью китайской теореме об остатках.
+Алгоритм чрезвычайно эффективен если p раскладывается на небольшие простые множители. Это необходимо учитывать в выборе ключей при проектировании криптосистем. </value>
   </data>
 </root>

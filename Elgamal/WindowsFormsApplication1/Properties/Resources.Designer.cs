@@ -73,6 +73,26 @@ namespace ElgamalTutor.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap JohnPollard {
+            get {
+                object obj = ResourceManager.GetObject("JohnPollard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MartinHellman {
+            get {
+                object obj = ResourceManager.GetObject("MartinHellman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Shanks {
             get {
                 object obj = ResourceManager.GetObject("Shanks", resourceCulture);
