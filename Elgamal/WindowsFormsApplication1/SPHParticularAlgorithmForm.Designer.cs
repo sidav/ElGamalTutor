@@ -1,6 +1,6 @@
 ﻿namespace ElgamalTutor
 {
-    partial class SPHAlgorithmForm
+    partial class SPHParticularAlgorithmForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SPHAlgorithmForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SPHParticularAlgorithmForm));
             this.ReturnBtn = new System.Windows.Forms.Button();
             this.endBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();

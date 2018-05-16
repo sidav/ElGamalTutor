@@ -10,21 +10,25 @@ using System.Windows.Forms;
 
 namespace ElgamalTutor
 {
-    public partial class SPHAlgorithmForm : Form
+    public partial class SPHParticularAlgorithmForm : Form
     {
-        public SPHAlgorithmForm()
+        public SPHParticularAlgorithmForm()
         {
             InitializeComponent();
+            textBox1.Select(0, 0);
         }
 
         private void ReturnBtn_Click(object sender, EventArgs e)
         {
-
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
         }
 
         private void endBtn_Click(object sender, EventArgs e)
         {
-
+            Answers.interruptTutorial = false;
+            this.Close();
         }
     }
 }

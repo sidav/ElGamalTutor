@@ -15,16 +15,20 @@ namespace ElgamalTutor
         public SPHFullAlgorithmForm()
         {
             InitializeComponent();
-        }
-
-        private void endBtn_Click(object sender, EventArgs e)
-        {
-
+            textBox1.Select(0, 0);
         }
 
         private void ReturnBtn_Click(object sender, EventArgs e)
         {
+            Answers.interruptTutorial = false;
+            Answers.formToShow -= 2;
+            this.Close();
+        }
 
+        private void endBtn_Click(object sender, EventArgs e)
+        {
+            Answers.interruptTutorial = false;
+            this.Close();
         }
     }
 }

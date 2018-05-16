@@ -53,10 +53,15 @@ namespace ElgamalTutor
             formList.Add(new GelfondShanksInfoForm());
             formList.Add(new GelfondShanksTheoryForm());
             formList.Add(new GelfondShanksAlgorithmForm());
+            formList.Add(new SPHInfoForm());
+            formList.Add(new SPHParticularAlgorithmForm());
+            formList.Add(new SPHFullAlgorithmForm());
+            formList.Add(new RhoInfoForm());
             formList.Add(new TestQuestionsForm1());
             formList.Add(new TestQuestionsForm2());
             formList.Add(new TestQuestionsForm3());
             formList.Add(new TestQuestionsForm4());
+            formList.Add(new TestQuestionsForm5());
             formList.Add(new TutorResults());
 
             while (!Answers.tutorialEnded && !Answers.interruptTutorial)

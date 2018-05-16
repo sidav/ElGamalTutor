@@ -10,24 +10,25 @@ using System.Windows.Forms;
 
 namespace ElgamalTutor
 {
-    public partial class SPHInfoForm : Form
+    public partial class TestQuestionsForm5 : Form
     {
-        public SPHInfoForm()
+        public TestQuestionsForm5()
         {
             InitializeComponent();
-            textBox1.Select(0, 0);
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            Answers.TestAnswers[8] = TrueAnswer3RButton.Checked;
+            Answers.TestAnswers[9] = TrueAnswer4RButton.Checked;
+            Answers.interruptTutorial = false;
+            this.Close();
         }
 
         private void ReturnBtn_Click(object sender, EventArgs e)
         {
             Answers.interruptTutorial = false;
             Answers.formToShow -= 2;
-            this.Close();
-        }
-
-        private void endBtn_Click(object sender, EventArgs e)
-        {
-            Answers.interruptTutorial = false;
             this.Close();
         }
     }

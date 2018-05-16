@@ -12,6 +12,12 @@ namespace ElgamalTutor
 {
     public partial class TutorResults : Form
     {
+        private static string BoolToResult(bool b)
+        {
+            if (b) return "Верно";
+            else return "Неверно";
+        }
+
         public TutorResults()
         {
             InitializeComponent();
@@ -75,38 +81,16 @@ namespace ElgamalTutor
 
             //////////////////////////
 
-            if (Answers.TestAnswers[0])
-                TestAnswer1Label.Text += "Верно";
-            else
-                TestAnswer1Label.Text += "Неверно";
-            if (Answers.TestAnswers[1])
-                TestAnswer2Label.Text += "Верно";
-            else
-                TestAnswer2Label.Text += "Неверно";
-            if (Answers.TestAnswers[2])
-                TestAnswer3Label.Text += "Верно";
-            else
-                TestAnswer3Label.Text += "Неверно";
-            if (Answers.TestAnswers[3])
-                TestAnswer4Label.Text += "Верно";
-            else
-                TestAnswer4Label.Text += "Неверно";
-            if (Answers.TestAnswers[4])
-                TestAnswer5Label.Text += "Верно";
-            else
-                TestAnswer5Label.Text += "Неверно";
-            if (Answers.TestAnswers[5])
-                TestAnswer6Label.Text += "Верно";
-            else
-                TestAnswer6Label.Text += "Неверно";
-            if (Answers.TestAnswers[6])
-                TestAnswer7Label.Text += "Верно";
-            else
-                TestAnswer7Label.Text += "Неверно";
-            if (Answers.TestAnswers[7])
-                TestAnswer8Label.Text += "Верно";
-            else
-                TestAnswer8Label.Text += "Неверно";
+            TestAnswer1Label.Text += BoolToResult(Answers.TestAnswers[0]);
+            TestAnswer2Label.Text += BoolToResult(Answers.TestAnswers[1]);
+            TestAnswer3Label.Text += BoolToResult(Answers.TestAnswers[2]);
+            TestAnswer4Label.Text += BoolToResult(Answers.TestAnswers[3]);
+            TestAnswer5Label.Text += BoolToResult(Answers.TestAnswers[4]);
+            TestAnswer6Label.Text += BoolToResult(Answers.TestAnswers[5]);
+            TestAnswer7Label.Text += BoolToResult(Answers.TestAnswers[6]);
+            TestAnswer8Label.Text += BoolToResult(Answers.TestAnswers[7]);
+            TestAnswer9Label.Text += BoolToResult(Answers.TestAnswers[8]);
+            TestAnswer10Label.Text += BoolToResult(Answers.TestAnswers[9]);
 
             //Some LINQ magic
             double summa = Answers.modpowAnswers.Sum(a => a ? 1 : 0) + Answers.EulerAnswers.Sum(a => a ? 1 : 0) 

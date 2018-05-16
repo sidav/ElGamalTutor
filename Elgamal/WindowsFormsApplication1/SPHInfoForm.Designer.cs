@@ -63,6 +63,7 @@
             this.ReturnBtn.TabIndex = 30;
             this.ReturnBtn.Text = "Назад";
             this.ReturnBtn.UseVisualStyleBackColor = true;
+            this.ReturnBtn.Click += new System.EventHandler(this.ReturnBtn_Click);
             // 
             // endBtn
             // 
@@ -72,6 +73,7 @@
             this.endBtn.TabIndex = 29;
             this.endBtn.Text = "Далее";
             this.endBtn.UseVisualStyleBackColor = true;
+            this.endBtn.Click += new System.EventHandler(this.endBtn_Click);
             // 
             // pictureBox1
             // 
