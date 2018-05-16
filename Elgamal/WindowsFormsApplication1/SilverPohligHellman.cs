@@ -165,12 +165,6 @@ namespace ElgamalTutor
             progress = prg;
             List<BigInteger[]> CountOccurencesList = CountOccurences(PrimeFactorization(p - 1));
 
-            //foreach (var fuck in CountOccurencesList)
-            //{
-            //    Console.Write($"({fuck[0]}, {fuck[1]})");
-            //}
-            //Console.Write(CountOccurencesList.Count);
-
             BigInteger tick = CountOccurencesList.Count / 100; // for progressbar
             if (tick == 0)
                 tick = 1;
