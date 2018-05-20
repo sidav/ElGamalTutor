@@ -178,7 +178,7 @@
             this.Controls.Add(this.ABox);
             this.Controls.Add(this.ResultLabel);
             this.Controls.Add(this.DoMagicBtn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "DiscreteLogarithmCalculationForm";
             this.Text = "Дискретный логарифм";

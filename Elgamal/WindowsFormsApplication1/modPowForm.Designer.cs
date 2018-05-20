@@ -72,7 +72,7 @@
             // 
             // modPowBox
             // 
-            this.modPowBox.Location = new System.Drawing.Point(8, 231);
+            this.modPowBox.Location = new System.Drawing.Point(8, 192);
             this.modPowBox.Name = "modPowBox";
             this.modPowBox.Size = new System.Drawing.Size(390, 20);
             this.modPowBox.TabIndex = 4;
@@ -107,7 +107,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 215);
+            this.label4.Location = new System.Drawing.Point(12, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 8;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 311);
+            this.ClientSize = new System.Drawing.Size(410, 219);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

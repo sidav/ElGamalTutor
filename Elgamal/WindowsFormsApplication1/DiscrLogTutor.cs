@@ -22,13 +22,26 @@ namespace ElgamalTutor
             textBox2.Select(0, 0);
             base1 = new BigInteger(r.Next(3)+2);
             base2 = new BigInteger(r.Next(4)+2);
-            mod1 = new BigInteger(r.Next(5)+2);
-            if (mod1 == base1) mod1++;
-            mod2 = new BigInteger(2*r.Next(6) + 5);
+            mod1 = base1;
+            mod2 = base2;
             BigInteger rnd1 = new BigInteger(r.Next(5) + 3);
             BigInteger rnd2 = new BigInteger(r.Next(7) + 3);
             num1 = BigInteger.ModPow(base1, rnd1, mod1);
             num2 = BigInteger.ModPow(base2, rnd2, mod2);
+
+            while (mod1 <= base1 || num1 == base1 || num1 == base1*base1 || num1 == 0)
+            {
+                mod1 = new BigInteger(r.Next(5) + 2);
+                rnd1 = new BigInteger(r.Next(5) + 3);
+                num1 = BigInteger.ModPow(base1, rnd1, mod1);
+            }
+            while (mod2 <= base2 || num2 == base2 || num2 == base2 * base2 || num2 == 0)
+            {
+                mod2 = new BigInteger(r.Next(7) + 2);
+                rnd2 = new BigInteger(r.Next(5) + 3);
+                num2 = BigInteger.ModPow(base1, rnd2, mod2);
+            }
+
             Task1Label.Text = 
                 "Попробуйте найти логарифм по основанию " + base1.ToString() + " и модулю " + mod1.ToString() + " от числа " + num1.ToString() + ":";
             Task2Label.Text =
