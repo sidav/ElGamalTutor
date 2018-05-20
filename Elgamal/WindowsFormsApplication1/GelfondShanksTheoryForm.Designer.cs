@@ -94,6 +94,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "GelfondShanksTheoryForm";
             this.Text = "Теория алгоритма Гельфонда-Шенкса";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

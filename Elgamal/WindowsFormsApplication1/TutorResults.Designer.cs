@@ -162,7 +162,7 @@
             // 
             // endBtn
             // 
-            this.endBtn.Location = new System.Drawing.Point(114, 354);
+            this.endBtn.Location = new System.Drawing.Point(151, 354);
             this.endBtn.Name = "endBtn";
             this.endBtn.Size = new System.Drawing.Size(122, 48);
             this.endBtn.TabIndex = 12;
@@ -174,7 +174,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(94, 331);
+            this.label2.Location = new System.Drawing.Point(123, 331);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 13;
@@ -184,7 +184,7 @@
             // 
             this.FinalMarkLabel.AutoSize = true;
             this.FinalMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FinalMarkLabel.Location = new System.Drawing.Point(242, 331);
+            this.FinalMarkLabel.Location = new System.Drawing.Point(271, 331);
             this.FinalMarkLabel.Name = "FinalMarkLabel";
             this.FinalMarkLabel.Size = new System.Drawing.Size(65, 20);
             this.FinalMarkLabel.TabIndex = 14;

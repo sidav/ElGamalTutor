@@ -72,6 +72,7 @@
             this.Controls.Add(this.ReturnBtn);
             this.Controls.Add(this.endBtn);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "GelfondShanksAlgorithmForm";
             this.Text = "Шаги алгоритма Гельфонда-Шенкса";
             this.ResumeLayout(false);

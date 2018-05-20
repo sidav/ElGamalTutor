@@ -134,7 +134,7 @@
             this.Controls.Add(this.AnswerBox1);
             this.Controls.Add(this.Task1Label);
             this.Controls.Add(this.textBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "DiscreteLogAlgorithmsInfoForm";
             this.Text = "Алгоритмы решения задачи дискретного логарифмирования";

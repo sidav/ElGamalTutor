@@ -17,16 +17,15 @@ namespace ElgamalTutor
            InitializeComponent();
         }
 
-        //private static void debugAnswers()
-        //{
-        //    Answers.modpowAnswers = new bool[]{ true, true, true };
-        //    Answers.EulerAnswers = new bool[] { true, true, true };
-        //    Answers.ReverseAnswers = new bool[] { true, true};
-        //    Answers.DiscreteLogAnswers = new bool[] { true, true };
-        //    Answers.AlgorithmicDLOGAnswers = new bool[] { true, true };
-        //    Answers.TestAnswers = new bool[] { true, true, true,true,true, true, true, true};
-
-        //}
+        private static void debugAnswers()
+        {
+            Answers.modpowAnswers = new bool[] { true, true, true };
+            Answers.EulerAnswers = new bool[] { true, true, true };
+            Answers.ReverseAnswers = new bool[] { true, true };
+            Answers.DiscreteLogAnswers = new bool[] { true, true };
+            Answers.AlgorithmicDLOGAnswers = new bool[] { true, true };
+            Answers.TestAnswers = new bool[] { true, true, true, true, true, true, true, true, true, true };
+        }
 
         private void startTutorBtn_Click(object sender, EventArgs e)
         {
